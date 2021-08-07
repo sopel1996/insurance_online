@@ -1,6 +1,12 @@
 .sectionFirstTable {
   margin-top: 2.5rem;
 }
+.sectionFirstTable #relative {
+  overflow-x: scroll;
+}
+.sectionFirstTable #wrapper {
+  margin-right: 8.125rem;
+}
 .sectionFirstTable .firstTable {
   width: 100%;
   border-collapse: collapse;
@@ -10,21 +16,26 @@
   border: 1px solid #CCC;
 }
 .sectionFirstTable .firstTable th {
-  max-width: 18.3125rem;
-  height: 5.625rem;
+  width: 9.375rem;
+  height: 12.5rem;
   color: #00549B;
   padding-right: 1.25rem;
-  padding-left: 9.375rem;
   font-family: "almoni", sans-serif;
   font-weight: 700;
   font-size: 1.25rem;
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
 }
 .sectionFirstTable .firstTable td {
   font-family: "almoni", sans-serif;
   font-weight: 500;
   font-size: 1.25rem;
   max-width: 7.9375rem;
-  height: 5.625rem;
+  height: 12.5rem;
   color: #5A5A5A;
   text-align: center;
 }

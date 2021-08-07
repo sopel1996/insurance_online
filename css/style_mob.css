@@ -391,6 +391,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: auto;
   margin-right: auto;
   height: 100%;
+  padding: 0 1.25rem;
 }
 
 input {
@@ -440,8 +441,8 @@ input {
 }
 
 .sectionSearchForm_Logo {
-  width: 18.4375rem;
-  height: 5.8125rem;
+  width: 13.125rem;
+  height: 4.125rem;
   margin: 0 auto;
   margin-bottom: 3.75rem;
   background: url(/img/svg/Logo.svg) 50% 50% no-repeat;
@@ -451,7 +452,7 @@ input {
 .sectionSearchForm_title {
   font-family: "almoni",sans-serif;
   font-weight: 900;
-  font-size: 2.625rem;
+  font-size: 2.375rem;
   color: #00549B;
   text-align: center;
   margin-bottom: 1.25rem;
@@ -460,7 +461,7 @@ input {
 .sectionSearchForm_subtitle {
   font-family: "almoni",sans-serif;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.75rem;
   color: #000;
   text-align: center;
   margin-bottom: 1.25rem;
@@ -469,7 +470,7 @@ input {
 .sectionSearchForm_text {
   font-family: "almoni",sans-serif;
   font-weight: 500;
-  font-size: 1.375rem;
+  font-size: 1.25rem;
   color: #000;
   text-align: center;
   margin-bottom: 1.25rem;
@@ -478,24 +479,23 @@ input {
 .sectionSearchForm_form {
   font-family: "almoni",sans-serif;
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
 }
 
 .sectionSearchForm_form .firstLineForm {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 1.25rem;
   padding: 0 0.625rem;
 }
 
@@ -503,28 +503,27 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 2.5rem;
   padding: 0 0.625rem;
 }
 
 .sectionSearchForm_form .checkboxSport {
   margin-left: 0.625rem;
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 0.625rem;
+  height: 0.625rem;
 }
 
 .sectionSearchForm_form .labelSport {
-  margin-left: 1.25rem;
   color: #00549B;
 }
 
@@ -534,11 +533,12 @@ input {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  width: 22.8125rem;
+  width: 13.75rem;
   height: 2.5rem;
   padding: 0.625rem 1.25rem;
   background: #fff url(/img/svg/inputArrow.svg) 0.625rem no-repeat;
   color: #00559bB2;
+  margin-bottom: 1.25rem;
 }
 
 .sectionSearchForm_form-personalInformation .personalInformationHeader {
@@ -609,13 +609,13 @@ input {
   font-weight: 500;
   font-size: 1.25rem;
   height: 2.5rem;
-  width: 13rem;
+  width: 11.25rem;
   color: #888888;
   margin-top: 0.3125rem;
 }
 
 .sectionSearchForm_form-personalInformation .personalInformationMain .container #lastSelect {
-  width: 41.6875rem;
+  width: 11.25rem;
   margin-bottom: 1.25rem;
 }
 
@@ -655,6 +655,14 @@ input {
   margin-top: 2.5rem;
 }
 
+.sectionFirstTable #relative {
+  overflow-x: scroll;
+}
+
+.sectionFirstTable #wrapper {
+  margin-right: 8.125rem;
+}
+
 .sectionFirstTable .firstTable {
   width: 100%;
   border-collapse: collapse;
@@ -666,14 +674,25 @@ input {
 }
 
 .sectionFirstTable .firstTable th {
-  max-width: 18.3125rem;
-  height: 5.625rem;
+  width: 9.375rem;
+  height: 12.5rem;
   color: #00549B;
   padding-right: 1.25rem;
-  padding-left: 9.375rem;
   font-family: "almoni",sans-serif;
   font-weight: 700;
   font-size: 1.25rem;
+  position: absolute;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
 }
 
 .sectionFirstTable .firstTable td {
@@ -681,7 +700,7 @@ input {
   font-weight: 500;
   font-size: 1.25rem;
   max-width: 7.9375rem;
-  height: 5.625rem;
+  height: 12.5rem;
   color: #5A5A5A;
   text-align: center;
 }
@@ -705,19 +724,27 @@ input {
   margin-top: 2.5rem;
 }
 
-.sectionSecondTable .secondTable {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 1.25rem;
+.sectionSecondTable #relative {
+  overflow-x: scroll;
 }
 
-.sectionSecondTable .secondTable caption {
+.sectionSecondTable #wrapper {
+  margin-right: 8.125rem;
+}
+
+.sectionSecondTable .caption {
   font-family: "almoni",sans-serif;
   font-weight: 700;
   font-size: 1.375rem;
   color: #00549B;
   text-align: center;
   margin-bottom: 2.5rem;
+}
+
+.sectionSecondTable .secondTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.25rem;
 }
 
 .sectionSecondTable .secondTable th, .sectionSecondTable .secondTable td {
@@ -730,14 +757,25 @@ input {
 }
 
 .sectionSecondTable .secondTable th {
-  max-width: 18.3125rem;
-  height: 5.625rem;
+  width: 9.375rem;
+  height: 24.375rem;
   color: #00549B;
   padding-right: 1.25rem;
-  padding-left: 9.375rem;
   font-family: "almoni",sans-serif;
   font-weight: 700;
   font-size: 1.25rem;
+  position: absolute;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
 }
 
 .sectionSecondTable .secondTable td {
@@ -745,7 +783,7 @@ input {
   font-weight: 500;
   font-size: 1.25rem;
   max-width: 7.9375rem;
-  height: 5.625rem;
+  height: 24.375rem;
   color: #5A5A5A;
   text-align: center;
 }
@@ -775,7 +813,7 @@ input {
 }
 
 .sectionVideo {
-  height: 40.875rem;
+  min-height: 40.875rem;
   background: #FAFAFA url(/img/png/sectionVideoBg.png) 50% 50% no-repeat;
   background-size: cover;
   position: relative;
@@ -815,10 +853,10 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -838,11 +876,17 @@ input {
   margin-top: 2.5rem;
 }
 
+.sectionVideo .sectionVideo_list {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
 .sectionVideo .sectionVideo_list .list {
   list-style: none;
   font-family: "almoni",sans-serif;
   font-weight: 500;
-  font-size: 1.125rem;
+  font-size: 0.6875rem;
   color: #5A5A5A;
   margin-bottom: 0.625rem;
 }
@@ -854,14 +898,20 @@ input {
 .sectionVideo .sectionVideo_list .textBetweenLists {
   font-family: "almoni",sans-serif;
   font-weight: 700;
-  font-size: 1.375rem;
+  font-size: 1.125rem;
   color: #00549B;
   margin-bottom: 0.625rem;
 }
 
+.sectionVideo .sectionVideo_media {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
 .sectionVideo .sectionVideo_media iframe {
-  width: 45.5625rem;
-  height: 32.875rem;
+  width: 12.5rem;
+  height: 11.25rem;
 }
 
 .sectionAccordeon {
@@ -921,10 +971,10 @@ input {
   position: relative;
   font-family: "almoni",sans-serif;
   font-weight: 700;
-  font-size: 1.375rem;
+  font-size: 1.125rem;
   display: block;
   padding: 0.625rem;
-  padding-left: 9.375rem;
+  padding-left: 3.125rem;
   background-color: #00549B;
   color: #fff;
   width: 100%;
@@ -955,7 +1005,7 @@ input {
 .sectionAccordeon .accordeonItem_content {
   font-family: "almoni",sans-serif;
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 1rem;
   padding: 1.25rem;
   display: none;
   color: #5A5A5A;
@@ -1010,8 +1060,7 @@ input {
 
 .sectionFooter .sectionFooter_firstLine .footerImg {
   margin-bottom: 2.5rem;
-  width: 36.4375rem;
-  height: 5.5rem;
+  width: 13.75rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1019,7 +1068,7 @@ input {
 .sectionFooter .sectionFooter_firstLine .footerText {
   font-family: "almoni",sans-serif;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 0.875rem;
   color: #5A5A5A;
 }
 
@@ -1028,10 +1077,10 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1041,6 +1090,9 @@ input {
 }
 
 .sectionFooter .sectionFooter_secondLine .realmediaLogo {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1054,6 +1106,7 @@ input {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 0.9375rem;
 }
 
 .sectionFooter .sectionFooter_secondLine .realmediaLogo .logoImg {
@@ -1078,43 +1131,117 @@ input {
 }
 
 .sectionFooter .sectionFooter_secondLine .copyright {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
   font-family: "almoni",sans-serif;
   font-weight: 500;
-  font-size: 1.125rem;
+  font-size: 0.875rem;
   color: #00549B;
 }
 
-@media (max-width: 1170px) {
-  .sectionInner {
-    padding: 0 1.25rem;
+@media (min-width: 360px) {
+  .sectionSearchForm_Logo {
+    width: 16.5625rem;
+    height: 5.8125rem;
   }
-  .sectionVideo {
-    max-height: 40.875rem;
-    padding: 1.25rem 0;
+  .sectionSearchForm_title {
+    font-size: 2.625rem;
   }
-  .sectionVideo .sectionVideo_media iframe {
-    width: 39.375rem;
-    height: 28.125rem;
+  .sectionSearchForm_subtitle {
+    font-size: 2rem;
   }
-}
-
-@media (max-width: 1000px) {
-  .sectionVideo .sectionVideo_media iframe {
-    width: 31.25rem;
-    height: 21.875rem;
+  .sectionSearchForm_text {
+    font-size: 1.375rem;
   }
-}
-
-@media (max-width: 860px) {
-  .sectionVideo .sectionVideo_list .textBetweenLists {
-    font-size: 1rem;
+  .sectionSearchForm_form {
+    font-size: 1.25rem;
+  }
+  .sectionSearchForm_form .firstLineForm,
+  .sectionSearchForm_form .secondLineForm {
+    padding: 0;
+  }
+  .sectionSearchForm_form .checkboxSport {
+    width: 1.25rem;
+    height: 1.25rem;
+    padding: 0;
+  }
+  .sectionSearchForm_form .destination,
+  .sectionSearchForm_form .departure,
+  .sectionSearchForm_form .arrival {
+    width: 100%;
+  }
+  .sectionSearchForm_form-personalInformation .personalInformationMain label {
+    margin-top: 0.625rem;
+  }
+  .sectionSearchForm_form-personalInformation .personalInformationMain .container {
+    width: 100%;
+  }
+  .sectionSearchForm_form-personalInformation .personalInformationMain .container select,
+  .sectionSearchForm_form-personalInformation .personalInformationMain .container input {
+    width: 100%;
+  }
+  .sectionSearchForm_form-personalInformation .personalInformationMain .container #lastSelect {
+    width: 100%;
+  }
+  .sectionVideo .title {
+    font-size: 1.75rem;
   }
   .sectionVideo .sectionVideo_list .list {
-    font-size: 0.9375rem;
+    font-size: 1rem;
+  }
+  .sectionVideo .sectionVideo_list .textBetweenLists {
+    font-size: 1.375rem;
   }
   .sectionVideo .sectionVideo_media iframe {
-    width: 24.6875rem;
-    height: 17.1875rem;
+    width: 20.75rem;
+    height: 15rem;
+  }
+  .sectionAccordeon .title {
+    font-size: 1.375rem;
+  }
+  .sectionAccordeon .subtitle {
+    font-size: 1.125rem;
+  }
+  .sectionAccordeon .accordeonTitle {
+    font-size: 1.75rem;
+  }
+  .sectionAccordeon .accordeonItem_trigger {
+    font-size: 1.375rem;
+  }
+  .sectionAccordeon .accordeonItem_content {
+    font-size: 1.25rem;
+  }
+  .sectionFooter .sectionFooter_firstLine .footerImg {
+    width: 20.9375rem;
+  }
+  .sectionFooter .sectionFooter_firstLine .footerText {
+    font-size: 1rem;
+  }
+  .sectionFooter .sectionFooter_secondLine .copyright {
+    font-Size: 1.125rem;
   }
 }
-/*# sourceMappingURL=style.css.map */
+
+@media (min-width: 576px) {
+  .sectionVideo .title {
+    font-size: 1.75rem;
+  }
+  .sectionVideo .sectionVideo_list .list {
+    font-size: 1.25rem;
+  }
+  .sectionVideo .sectionVideo_list .textBetweenLists {
+    font-size: 1.375rem;
+  }
+  .sectionVideo .sectionVideo_media {
+    width: 100%;
+  }
+  .sectionVideo .sectionVideo_media iframe {
+    width: 100%;
+    height: 21.875rem;
+  }
+  .sectionFooter .sectionFooter_firstLine .footerImg {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=style_mob.css.map */

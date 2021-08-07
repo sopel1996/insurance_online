@@ -25,27 +25,27 @@
         padding-top: toRem(60);
     }
     &_Logo{
-        width: toRem(210);
-        height: toRem(66);
+        width: toRem(295);
+        height: toRem(93);
         margin: 0 auto;
         margin-bottom: toRem(60);
         background: url(/img/svg/Logo.svg) 50% 50% no-repeat;
         background-size: cover;
     }
     &_title{
-        @include AlmoniBlack(38);
+        @include AlmoniBlack(42);
         color: #00549B;
         text-align: center;
         margin-bottom: toRem(20)
     }
     &_subtitle{
-        @include AlmoniBold(28);
+        @include AlmoniBold(32);
         color: #000;
         text-align: center;
         margin-bottom: toRem(20)
     }
     &_text{
-        @include AlmoniRegular(20);
+        @include AlmoniRegular(22);
         color: #000;
         text-align: center;
         margin-bottom: toRem(20)
@@ -57,47 +57,66 @@
     
     &_form{
         
-        @include AlmoniRegular(18);
+        @include AlmoniRegular(20);
 
         
         .firstLineForm{
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             align-items: center;
             justify-content: space-between;
-            // margin-bottom: toRem(20);
+            margin-bottom: toRem(20);
             padding: 0 toRem(10);
         }
         .secondLineForm{
             display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
             margin-bottom: toRem(40);
             padding: 0 toRem(10);
         }
         .checkboxSport{
             margin-left: toRem(10);
-            width: toRem(10);
-            height: toRem(10);
+            width: toRem(20);
+            height: toRem(20);
         }
         .labelSport{
-            // margin-left: toRem(20);
+            margin-left: toRem(20);
             color: #00549B;
         }
         .destination,
         .departure,
         .arrival{
             appearance: none;
-            width: toRem(220);
+            width: toRem(365);
             height: toRem(40);
             padding: toRem(10) toRem(20);
             background: #fff url(/img/svg/inputArrow.svg) toRem(10) no-repeat;
             color:#00559bB2;
-            margin-bottom: toRem(20);
         }
-       
+        // .departure{
+        //     position: relative;
+        //     &::before{
+        //         font-size: 16px;
+        //         display: block;
+        //         content: "123";
+        //         position: absolute;
+        //         left: 50%;
+        //         top: calc(50% - 8px);
+        //         color: red;
+        //     }
+        //     &:focus {
+        //         &::before{
+        //             display: none;
+        //         }
+        //     }
+        // }
+        // .arrival{
+        //     // &::-webkit-calendar-picker-indicator { display:none;}
+        // }
         &-personalInformation{
+            // height: toRem(330);
             .personalInformationHeader{
                 height: toRem(57);
                 background-color: #00549B;
@@ -107,7 +126,7 @@
                 justify-content: flex-start;
                 padding-right: toRem(20);
                 @include AlmoniBold(32);
-                
+
             }
             .personalInformationMain{
                 margin-bottom: toRem(16);
@@ -131,13 +150,13 @@
                     input{
                         @include AlmoniRegular(20);
                         height: toRem(40);
-                        width: toRem(180);
+                        width: toRem(208);
                         color: #888888;
                         margin-top: toRem(5);
 
                     }
                     #lastSelect{
-                        width: toRem(180);
+                        width: toRem(667);
                         margin-bottom: toRem(20);
                     }
                 }

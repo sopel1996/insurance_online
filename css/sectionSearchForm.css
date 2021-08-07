@@ -1,8 +1,8 @@
 .sectionSearchForm {
   min-height: 72.8125rem;
   width: 100%;
-  background: url(/img/png/sectionSearchBg.jpg) 0 0 no-repeat;
-  background-size: 100% auto;
+  background: url(/img/png/sectionSearchBg.jpg) 50% 50% no-repeat;
+  background-size: auto 100%;
   position: relative;
   overflow: hidden;
 }

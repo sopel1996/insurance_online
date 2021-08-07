@@ -1,5 +1,5 @@
 .sectionVideo {
-  height: 40.875rem;
+  min-height: 40.875rem;
   background: #FAFAFA url(/img/png/sectionVideoBg.png) 50% 50% no-repeat;
   background-size: cover;
   position: relative;
@@ -18,9 +18,26 @@
   position: relative;
   z-index: 10;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.sectionVideo .content {
+  position: relative;
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1.5625rem;
+}
+.sectionVideo .title {
+  font-family: "almoni", sans-serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+  color: #00549B;
+  margin-bottom: 0.1875rem;
+  margin-top: 2.5rem;
 }
 .sectionVideo .sectionVideo_list .list {
   list-style: none;
