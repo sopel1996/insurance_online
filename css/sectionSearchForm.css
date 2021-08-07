@@ -1,5 +1,5 @@
 .sectionSearchForm {
-  height: 1165px;
+  min-height: 72.8125rem;
   width: 100%;
   background: url(/img/png/sectionSearchBg.jpg) 0 0 no-repeat;
   background-size: 100% auto;

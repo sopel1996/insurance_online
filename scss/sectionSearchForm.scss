@@ -1,7 +1,7 @@
 @import 'mixins.scss';
 .sectionSearchForm{
 
-    height: 1165px;
+    min-height: toRem(1165);
     width: 100%;
     background: url(/img/png/sectionSearchBg.jpg) 0 0 no-repeat;
     background-size: 100% auto;

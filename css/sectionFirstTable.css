@@ -11,7 +11,7 @@
 }
 .sectionFirstTable .firstTable th {
   max-width: 18.3125rem;
-  max-height: 5.625rem;
+  height: 5.625rem;
   color: #00549B;
   padding-right: 1.25rem;
   padding-left: 9.375rem;
@@ -24,13 +24,12 @@
   font-weight: 500;
   font-size: 1.25rem;
   max-width: 7.9375rem;
-  max-height: 5.625rem;
+  height: 5.625rem;
   color: #5A5A5A;
   text-align: center;
 }
 .sectionFirstTable .firstTable td img {
   width: 100%;
-  height: 100%;
   object-fit: cover;
 }
 .sectionFirstTable .textAfterTable {

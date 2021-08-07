@@ -10,7 +10,7 @@
         }
         th{
             max-width: toRem(293);
-            max-height: toRem(90);
+            height: toRem(90);
             color: #00549B;
             padding-right: toRem(20);
             padding-left: toRem(150);
@@ -19,12 +19,12 @@
         td{
             @include AlmoniRegular(20);
             max-width: toRem(127);
-            max-height: toRem(90);
+            height: toRem(90);
             color: #5A5A5A;
             text-align: center;
             img{
                 width: 100%;
-                height: 100%;
+                // height: 100%;
                 object-fit: cover
             }
             // padding: 0 toRem(10);
