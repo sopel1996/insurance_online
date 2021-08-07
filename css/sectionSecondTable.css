@@ -1,0 +1,63 @@
+.sectionSecondTable {
+  margin-top: 2.5rem;
+}
+.sectionSecondTable .secondTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.25rem;
+}
+.sectionSecondTable .secondTable caption {
+  font-family: "almoni", sans-serif;
+  font-weight: 700;
+  font-size: 1.375rem;
+  color: #00549B;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.sectionSecondTable .secondTable th, .sectionSecondTable .secondTable td {
+  border: 1px solid #CCC;
+}
+.sectionSecondTable .secondTable tr:nth-child(4) th, .sectionSecondTable .secondTable tr:nth-child(5) th, .sectionSecondTable .secondTable tr:nth-child(6) th, .sectionSecondTable .secondTable tr:nth-child(7) th, .sectionSecondTable .secondTable tr:nth-child(8) th, .sectionSecondTable .secondTable tr:nth-child(9) th, .sectionSecondTable .secondTable tr:nth-child(10) th, .sectionSecondTable .secondTable tr:nth-child(11) th {
+  color: #fff;
+  background-color: #00549B;
+}
+.sectionSecondTable .secondTable th {
+  max-width: 18.3125rem;
+  max-height: 5.625rem;
+  color: #00549B;
+  padding-right: 1.25rem;
+  padding-left: 9.375rem;
+  font-family: "almoni", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+.sectionSecondTable .secondTable td {
+  font-family: "almoni", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  max-width: 7.9375rem;
+  max-height: 5.625rem;
+  color: #5A5A5A;
+  text-align: center;
+}
+.sectionSecondTable .secondTable td img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sectionSecondTable .textAfterTable {
+  font-family: "almoni", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #00549B;
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+.sectionSecondTable .markedTextAfterTable {
+  font-family: "almoni", sans-serif;
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: #F20D0D;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
