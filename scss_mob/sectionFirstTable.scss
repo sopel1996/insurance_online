@@ -1,7 +1,15 @@
 @import 'mixins.scss';
 .sectionFirstTable{
+    #relative{
+
+        overflow-x: scroll;
+    }
+    #wrapper{
+        margin-right:toRem(130);    
+    }
     margin-top:toRem(40);
-    .sectionInner{}
+    .sectionInner{
+    }
     .firstTable{
         width: 100%;
         border-collapse: collapse;
@@ -10,17 +18,26 @@
             border: 1px solid #CCC;
         }
         th{
-            max-width: toRem(293);
-            height: toRem(90);
+            width: toRem(150);
+            height: toRem(200);
             color: #00549B;
             padding-right: toRem(20);
-            padding-left: toRem(150);
+            // padding-left: toRem(150);
             @include AlmoniBold(20);
+            position: absolute;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            // text-align: center
+            // width: 100px;
+            // background-color: yellow;
         }
         td{
             @include AlmoniRegular(20);
             max-width: toRem(127);
-            height: toRem(90);
+            height: toRem(200);
             color: #5A5A5A;
             text-align: center;
             img{

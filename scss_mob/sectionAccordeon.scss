@@ -58,11 +58,11 @@
                     position: absolute;
                     left: toRem(20);
                 }
-                @include AlmoniBold(22);
+                @include AlmoniBold(18);
 
                 display: block;
                 padding: toRem(10);
-                padding-left: toRem(150);
+                padding-left: toRem(50);
                 background-color: #00549B;
                     color: #fff;
                     width: 100%;
@@ -73,7 +73,7 @@
                     justify-content: flex-start;
             }
             &_content{
-                @include AlmoniRegular(20);
+                @include AlmoniRegular(16);
 
                 padding: toRem(20);
                 display: none;

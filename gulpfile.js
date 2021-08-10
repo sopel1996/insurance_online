@@ -14,7 +14,7 @@ const browserSync = require('browser-sync').create();
 //         .pipe(browserSync.stream());
 // }
 function style() {
-    return gulp.src('./scss_desktop/**/style.scss')
+    return gulp.src('./scss/**/*.scss')
         .pipe(sass())
         // .pipe(autoprefixer({
         //     cascade: false

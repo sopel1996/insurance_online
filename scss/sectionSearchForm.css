@@ -1,0 +1,610 @@
+.sectionSearchForm {
+  min-height: 72.8125rem;
+  width: 100%;
+  background: url(/img/png/sectionSearchBg.jpg) 50% 50% no-repeat;
+  background-size: auto 100%;
+  position: relative;
+  overflow: hidden;
+  /* New Picker */
+}
+
+.sectionSearchForm::before {
+  content: '';
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #c6c6c6;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(198, 198, 198, 0.7)), color-stop(60%, white), to(white));
+  background: linear-gradient(180deg, rgba(198, 198, 198, 0.7) 0%, white 60%, white 100%);
+}
+
+.sectionSearchForm .sectionInner {
+  position: relative;
+  z-index: 10;
+  padding-top: 3.75rem;
+}
+
+.sectionSearchForm_Logo {
+  width: 18.4375rem;
+  height: 5.8125rem;
+  margin: 0 auto;
+  margin-bottom: 3.75rem;
+  background: url(/img/svg/Logo.svg) 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.sectionSearchForm_title {
+  font-family: "almoni",sans-serif;
+  font-weight: 900;
+  font-size: 2.625rem;
+  color: #00549B;
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.sectionSearchForm_subtitle {
+  font-family: "almoni",sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #000;
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.sectionSearchForm_text {
+  font-family: "almoni",sans-serif;
+  font-weight: 500;
+  font-size: 1.375rem;
+  color: #000;
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.sectionSearchForm_form {
+  font-family: "almoni",sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.sectionSearchForm_form .firstLineForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1.25rem;
+  padding: 0 0.625rem;
+}
+
+.sectionSearchForm_form .secondLineForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 2.5rem;
+  padding: 0 0.625rem;
+}
+
+.sectionSearchForm_form .checkboxSport {
+  margin-left: 0.625rem;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.sectionSearchForm_form .labelSport {
+  margin-left: 1.25rem;
+  color: #00549B;
+}
+
+.sectionSearchForm_form .destination,
+.sectionSearchForm_form .departure,
+.sectionSearchForm_form .arrival {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 22.8125rem;
+  height: 2.5rem;
+  padding: 0.625rem 1.25rem;
+  background: #fff url(/img/svg/inputArrow.svg) 0.625rem no-repeat;
+  color: #00559bB2;
+}
+
+.sectionSearchForm_form-personalInformation .personalInformationHeader {
+  height: 3.5625rem;
+  background-color: #00549B;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-right: 1.25rem;
+  font-family: "almoni",sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.sectionSearchForm_form-personalInformation .personalInformationMain {
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-height: 16.5rem;
+  background-color: #FAFAFA;
+  padding: 0 1.25rem;
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.199);
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.199);
+}
+
+.sectionSearchForm_form-personalInformation .personalInformationMain .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "almoni",sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.sectionSearchForm_form-personalInformation .personalInformationMain .container select,
+.sectionSearchForm_form-personalInformation .personalInformationMain .container input {
+  font-family: "almoni",sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  height: 2.5rem;
+  width: 13rem;
+  color: #888888;
+  margin-top: 0.3125rem;
+}
+
+.sectionSearchForm_form-personalInformation .personalInformationMain .container #lastSelect {
+  width: 41.6875rem;
+  margin-bottom: 1.25rem;
+}
+
+.sectionSearchForm_form-personalInformation .personalInformationFooter {
+  height: 3.5625rem;
+  background-color: #EEEEEE;
+  color: #00549B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-right: 1.25rem;
+  font-family: "almoni",sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.sectionSearchForm_form .btn {
+  display: block;
+  margin: 2.5rem auto 0;
+  height: 3.125rem;
+  width: 12.75rem;
+  text-align: center;
+  font-family: "almoni",sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #fff;
+  background-color: #00549B;
+}
+
+.sectionSearchForm .calculator2019 * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.sectionSearchForm .calculator2019 a:link, .sectionSearchForm .calculator2019 a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+.sectionSearchForm .calculator2019 a:hover {
+  color: #000;
+}
+
+.sectionSearchForm .buy a p {
+  direction: rtl;
+}
+
+.sectionSearchForm .calculator2019 input[type="text"],
+.sectionSearchForm .calculator2019 input[type="number"],
+.sectionSearchForm .calculator2019 select {
+  border: 1px #ececec solid;
+  border-radius: 3px;
+  background: #fff;
+  color: #000;
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 30px;
+  height: 30px;
+  padding: 0 10px;
+  -webkit-appearance: none;
+}
+
+.sectionSearchForm .calculator2019 .dates {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -5px;
+}
+
+.sectionSearchForm .calculator2019 .dates label {
+  width: 200px;
+  padding: 5px;
+}
+
+.sectionSearchForm .calculator2019 .dates label span.title {
+  display: block;
+}
+
+.sectionSearchForm .calculator2019 .dates label input[type="text"] {
+  width: 100%;
+}
+
+.sectionSearchForm .calculator2019 .dates label.checkbox {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sectionSearchForm .calculator2019 .dates label.etgari,
+.sectionSearchForm .calculator2019 .dates label.ski {
+  display: none;
+}
+
+.sectionSearchForm .calculator2019 .fields {
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+.sectionSearchForm .calculator2019 .fields li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 15px 0 0 0;
+  background: #fafafa;
+  border: 1px #ececec solid;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.sectionSearchForm .calculator2019 .fields li .num {
+  width: 100%;
+  padding: 0 0 10px 0;
+  border-bottom: 1px #ececec solid;
+  margin: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sectionSearchForm .calculator2019 .fields li .num a {
+  width: 10px;
+  height: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  background: #ef1616;
+  font-size: 12px;
+  margin: 0 0 0 5px;
+  color: #fff;
+  position: relative;
+  bottom: -1px;
+}
+
+.sectionSearchForm .calculator2019 .fields li label {
+  width: 20%;
+  padding: 5px;
+  position: relative;
+}
+
+.sectionSearchForm .calculator2019 .fields li label span.title {
+  display: block;
+}
+
+.sectionSearchForm .calculator2019 .fields li label div.error {
+  font-size: 10px;
+  color: red;
+}
+
+.sectionSearchForm .calculator2019 .fields li label select,
+.sectionSearchForm .calculator2019 .fields li label input {
+  width: 100%;
+}
+
+.sectionSearchForm .calculator2019 .fields li label:before {
+  content: "\25BE";
+  position: absolute;
+  font-size: 12px;
+  left: 15px;
+  top: 29px;
+}
+
+.sectionSearchForm .calculator2019 .fields li label.age:before {
+  display: none;
+}
+
+.sectionSearchForm .calculator2019 #addperson {
+  background: #fff;
+  border: 1px #ececec solid;
+  border-radius: 3px;
+  line-height: 25px;
+  padding: 0 7px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #069;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0 0 10px 0;
+}
+
+.sectionSearchForm .calculator2019 #addperson:hover {
+  color: #fff;
+  background: #069;
+  border-color: #069;
+}
+
+.sectionSearchForm .calculator2019 .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 20px 0;
+}
+
+.sectionSearchForm .calculator2019 #calculate {
+  padding: 0 15px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 40px;
+  border-radius: 3px;
+  background: #57aa1a;
+  border: 1px #357903 solid;
+  color: #fff;
+  cursor: pointer;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.sectionSearchForm .calculator2019 .results {
+  display: none;
+  margin: 0 0 20px 0;
+}
+
+.sectionSearchForm .t-datepicker {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sectionSearchForm .t-check-in, .sectionSearchForm .t-check-out, .sectionSearchForm .t-datepicker {
+  float: none;
+}
+
+.sectionSearchForm .t-check-in, .sectionSearchForm .t-check-out {
+  border: 1px #00549B solid;
+  border-radius: 3px;
+  width: 190px;
+  padding: 0 10px;
+  background-color: #fff;
+}
+
+.sectionSearchForm .t-dates {
+  height: 30px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sectionSearchForm .t-datepicker-days .t-table-wrap {
+  margin-left: 0;
+  margin-right: 2%;
+}
+
+.sectionSearchForm .t-check-in .t-date-info-title, .sectionSearchForm .t-check-out .t-date-info-title {
+  width: auto !important;
+  line-height: inherit;
+  padding: 0 !important;
+  position: static;
+}
+
+.sectionSearchForm .t-next, .sectionSearchForm .t-prev, .sectionSearchForm .t-table-condensed td, .sectionSearchForm .t-table-condensed th {
+  border: 0 !important;
+  width: auto !important;
+  padding: 10px !important;
+}
+
+.sectionSearchForm .t-table-condensed {
+  border: 0 !important;
+}
+
+.sectionSearchForm .t-table-condensed th:first-child,
+.sectionSearchForm .t-table-condensed td:first-child {
+  text-align: center !important;
+  font-size: inherit !important;
+  background: inherit !important;
+  color: inherit !important;
+  font-weight: normal !important;
+}
+
+.sectionSearchForm .t-table-condensed tr th:first-child {
+  font-weight: bold;
+}
+
+.sectionSearchForm .t-table-condensed tbody td, .sectionSearchForm .t-table-condensed tbody td:first-child {
+  background: #efefef !important;
+  border: 1px #fff solid !important;
+}
+
+.sectionSearchForm .t-table-condensed tbody td:hover,
+.sectionSearchForm .t-table-condensed tbody .t-range,
+.sectionSearchForm .t-table-condensed tbody .t-range:first-child,
+.sectionSearchForm .t-table-condensed tbody .t-start,
+.sectionSearchForm .t-table-condensed tbody .t-start:first-child,
+.sectionSearchForm .t-table-condensed tbody .t-end,
+.sectionSearchForm .t-table-condensed tbody .t-hover-day,
+.sectionSearchForm .t-table-condensed tbody .t-hover-day:first-child,
+.sectionSearchForm .t-table-condensed tbody .t-range-limit,
+.sectionSearchForm .t-table-condensed tbody .t-range-limit:first-child {
+  background: #069 !important;
+  color: #fff !important;
+}
+
+.sectionSearchForm .t-table-condensed tbody .t-today,
+.sectionSearchForm .t-today .t-hover-day-content {
+  background: orange !important;
+  color: #fff !important;
+}
+
+.sectionSearchForm .t-today:after, .sectionSearchForm .t-today:hover:after {
+  border-top-color: orange;
+}
+
+.sectionSearchForm .t-month-check-in,
+.sectionSearchForm .t-month-check-out {
+  margin: 0 5px;
+}
+
+.sectionSearchForm .t-check-in {
+  margin: 0 0 0 10px;
+}
+
+.sectionSearchForm .t-input {
+  display: none;
+}
+
+.sectionSearchForm .calculator2019 table {
+  border: 1px #ececec solid;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sectionSearchForm .calculator2019 table th, .sectionSearchForm table td {
+  border: 1px #ececec solid;
+  padding: 5px;
+  width: calc(100%/8);
+}
+
+.sectionSearchForm .calculator2019 table th {
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.sectionSearchForm .calculator2019 table th img {
+  max-width: 80%;
+  max-height: 38px;
+}
+
+.sectionSearchForm .calculator2019 table th:first-child {
+  background: #069;
+  color: #fff;
+  font-size: 16px;
+}
+
+.sectionSearchForm .calculator2019 table td {
+  text-align: center;
+  font-weight: bold;
+  color: #001AB4;
+}
+
+.sectionSearchForm .calculator2019 table td:first-child {
+  text-align: right;
+  font-weight: bold;
+  color: #001AB4;
+}
+
+.sectionSearchForm .calculator2019 table tr:hover td {
+  background: #fafafa;
+}
+
+.sectionSearchForm .calculator2019 .results table tr:last-child td,
+.sectionSearchForm .calculator2019 .results table tr:last-child:hover td {
+  background: #f4f9f0;
+  font-weight: bold;
+  color: #2e7900;
+}
+
+.sectionSearchForm .calculator2019 .tablewrap ul {
+  display: none;
+}
+/*# sourceMappingURL=sectionSearchForm.css.map */

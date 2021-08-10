@@ -1,6 +1,7 @@
 @import 'mixins.scss';
 .sectionVideo{
-    height: toRem(654);
+
+    min-height: toRem(654);
     background: #FAFAFA url(/img/png/sectionVideoBg.png) 50% 50% no-repeat;
     background-size: cover;
     position: relative;
@@ -25,7 +26,7 @@
     .content{
         position: relative;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: space-between;
         width: 100%;
@@ -40,9 +41,10 @@
     }
     .sectionVideo_list{
 
+        order: 2;
         .list{
             list-style: none;
-            @include AlmoniRegular(18);
+            @include AlmoniRegular(11);
             color: #5A5A5A;
             margin-bottom: toRem(10);
             &:last-child{
@@ -50,15 +52,16 @@
             }
         }
         .textBetweenLists{
-            @include AlmoniBold(22);
+            @include AlmoniBold(18);
             color: #00549B;
             margin-bottom: toRem(10);
         }
     }
     .sectionVideo_media{
+        order: 1;
         iframe{
-        width: toRem(729);
-        height: toRem(526);
+        width: toRem(200);
+        height: toRem(180);
         }   
     }
 }

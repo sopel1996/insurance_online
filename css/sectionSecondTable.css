@@ -1,12 +1,6 @@
 .sectionSecondTable {
   margin-top: 2.5rem;
 }
-.sectionSecondTable #relative {
-  overflow-x: scroll;
-}
-.sectionSecondTable #wrapper {
-  margin-right: 8.125rem;
-}
 .sectionSecondTable .caption {
   font-family: "almoni", sans-serif;
   font-weight: 700;
@@ -28,28 +22,24 @@
   background-color: #00549B;
 }
 .sectionSecondTable .secondTable th {
-  width: 9.375rem;
-  height: 12.5rem;
+  max-width: 18.3125rem;
+  height: 5.625rem;
   color: #00549B;
   padding-right: 1.25rem;
+  padding-left: 9.375rem;
   font-family: "almoni", sans-serif;
   font-weight: 700;
   font-size: 1.25rem;
-  position: absolute;
-  right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #fff;
 }
 .sectionSecondTable .secondTable td {
   font-family: "almoni", sans-serif;
   font-weight: 500;
   font-size: 1.25rem;
   max-width: 7.9375rem;
-  height: 12.5rem;
+  height: 5.625rem;
   color: #5A5A5A;
   text-align: center;
+  padding: 0.625rem;
 }
 .sectionSecondTable .secondTable td img {
   width: 100%;

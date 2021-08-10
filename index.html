@@ -6,9 +6,284 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link type="text/css" media="all" href="css/t-datepicker.min.css" rel="stylesheet">
+    <link type="text/css" media="all" href="css/t-datepicker-blue.css" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
     <title>INSURANCE-ONLINE</title>
 </head>
+<style>
+    @media (max-width: 500px) {
+        .calculator2019 .dates label {
+            width: 50%;
+        }
+
+        .calculator2019 .fields li label {
+            width: 50%;
+        }
+
+        .calculator2019 .fields li label.age {
+            width: 100%;
+        }
+
+        .calculator2019 #calculate {
+            width: 100%;
+        }
+
+        .calculator2019 .tablewrap {
+            max-width: calc(100vw - 40px);
+            display: flex;
+            border-right: 1px #ececec solid;
+            border-left: 1px #ececec solid;
+            overflow: hidden;
+        }
+
+        .calculator2019 .tablewrap ul {
+            display: block;
+            width: 100px;
+            text-align: center;
+            font-size: 1em;
+            font-weight: bold;
+            -webkit-box-shadow: 0px 0px 10px 0px #ccc;
+            -moz-box-shadow: 0px 0px 10px 0px #ccc;
+            box-shadow: 0px 0px 10px 0px #ccc;
+            position: relative;
+            list-style: none;
+            padding: 2px 0px 2px 0px;
+            margin: 0;
+            z-index: 1;
+        }
+
+        .calculator2019 .tablewrap ul li {
+            padding: 5px;
+            font-weight: bold;
+            border-top: 1px #ececec solid;
+            font-size: 0.8em;
+            color: #001AB4
+        }
+
+        .calculator2019 .tablewrap ul li:first-child {
+            font-size: 16px;
+            background: #069;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .calculator2019 .tablewrap-inner {
+            width: 100%;
+            overflow-x: scroll
+        }
+
+        .calculator2019 table {
+            border-right: 0;
+            border-left: 0;
+            margin-right: -125px;
+        }
+
+        .calculator2019 table tr th,
+        .calculator2019 table tr td {
+            max-width: 70px;
+        }
+
+        .calculator2019 table tr th:first-child,
+        .calculator2019 table tr td:first-child {
+            border-right: 0;
+            min-width: 125px;
+        }
+
+        .calculator2019 table tr th:last-child,
+        .calculator2019 table tr td:last-child {
+            border-left: 0;
+        }
+    }
+
+    @media screen and (max-width:415px) {
+        .calculator2019 .dates label {
+            width: 50%;
+        }
+
+        .calculator2019 .fields li label {
+            width: 50%;
+        }
+
+        .calculator2019 .fields li label.age {
+            width: 100%;
+        }
+
+        .calculator2019 #calculate {
+            width: 100%;
+        }
+
+        .calculator2019 .tablewrap {
+            max-width: calc(100vw - 40px);
+            display: flex;
+            border-right: 1px #ececec solid;
+            border-left: 1px #ececec solid;
+            overflow: hidden;
+        }
+
+        .calculator2019 .tablewrap ul {
+            display: block;
+            width: 100px;
+            text-align: center;
+            font-size: 1em;
+            font-weight: bold;
+            -webkit-box-shadow: 0px 0px 10px 0px #ccc;
+            -moz-box-shadow: 0px 0px 10px 0px #ccc;
+            box-shadow: 0px 0px 10px 0px #ccc;
+            position: relative;
+            list-style: none;
+            padding: 2px 0px 2px 0px;
+            margin: 0;
+            z-index: 1;
+        }
+
+        .calculator2019 .tablewrap ul li {
+            padding: 5px;
+            font-weight: bold;
+            border-top: 1px #ececec solid;
+            font-size: 0.8em;
+            color: #001AB4
+        }
+
+        .calculator2019 .tablewrap ul li:first-child {
+            font-size: 16px;
+            background: #069;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .calculator2019 .tablewrap-inner {
+            width: calc(100% -100px);
+            overflow-x: scroll;
+        }
+
+        .calculator2019 .tablewrap-inner {
+            width: 100%;
+            overflow-x: scroll;
+            padding-right: -22%;
+        }
+
+        .calculator2019 table {
+            border-left: 0;
+            margin-right: -110px;
+        }
+
+        .calculator2019 table tr th,
+        .calculator2019 table tr td {
+            min-width: 100px;
+        }
+
+        .calculator2019 table tr th:first-child,
+        .calculator2019 table tr td:first-child {
+            border-right: 0;
+            border-left: 0;
+
+            width: 100%;
+            min-height: 55px
+        }
+    }
+
+    @media (max-width: 500px) {
+        .calculator2019 .dates label {
+            width: 50%;
+        }
+
+        .calculator2019 .fields li label {
+            width: 50%;
+        }
+
+        .calculator2019 .fields li label.age {
+            width: 100%;
+        }
+
+        .calculator2019 #calculate {
+            width: 100%;
+        }
+
+        .calculator2019 .tablewrap {
+            max-width: calc(100vw - 40px);
+            display: flex;
+            border-right: 1px #ececec solid;
+            border-left: 1px #ececec solid;
+            overflow: hidden;
+        }
+
+        .calculator2019 .tablewrap ul {
+            display: block;
+            width: 100px;
+            -webkit-box-shadow: 0px 0px 10px 0px #ccc;
+            -moz-box-shadow: 0px 0px 10px 0px #ccc;
+            box-shadow: 0px 0px 10px 0px #ccc;
+            position: relative;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            z-index: 1;
+        }
+
+        .calculator2019 .tablewrap ul li {
+            padding: 5px;
+            font-weight: bold;
+            border-top: 1px #ececec solid;
+        }
+
+        .calculator2019 .tablewrap ul li:first-child {
+            font-size: 16px;
+            background: #069;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .calculator2019 .tablewrap-inner {
+            width: calc(100% - 100px);
+            overflow-x: scroll;
+        }
+
+        .calculator2019 table {
+            border-right: 0;
+            border-left: 0;
+            margin-right: -125px;
+        }
+
+        .calculator2019 table tr th,
+        .calculator2019 table tr td {
+            min-width: 100px;
+        }
+
+        .calculator2019 table tr th:first-child,
+        .calculator2019 table tr td:first-child {
+            border-right: 0;
+            min-width: 125px;
+        }
+
+        .calculator2019 table tr th:last-child,
+        .calculator2019 table tr td:last-child {
+            border-left: 0;
+        }
+
+        .t-table-condensed {
+            margin-right: 0 !important;
+        }
+
+        .t-table-condensed th,
+        .t-table-condensed td {
+            min-width: 0 !important;
+        }
+
+        .t-check-out .t-datepicker-day {
+            left: auto;
+            right: -100%;
+        }
+
+    }
+</style>
 
 <body>
     <section class="sectionSearchForm">
@@ -30,17 +305,115 @@
                 סכרת עם אינסולין, פרקינסון,סיסטיק פיברוזיס, אי ספיקת כליות, אי ספיקת כבד, אפילפסיה, טרשת נפוצה, איידס,
                 מחלות מעיים, קרישיות יתר, מושתל איברים, מחלת מערכת עצבים, המופליה, לחץ דם ריאתי, אלצהיימר, מחלת נפש
             </div>
-            <form action="" class="sectionSearchForm_form">
-                <!-- <select name="departureDate" id="departureDate">
-                    <option value="" disabled selected style="display: none;">בחר תאריך יציאה</option>
-                    <option value="1">First</option>
-                    <option value="2">Second</option>
-                </select> -->
-                <!-- <select name="arrivalDate" id="arrivalDate">
-                    <option value="" disabled selected style="display: none;">בחר תאריך חזרה</option>
-                    <option value="1">First</option>
-                    <option value="2">Second</option>
-                </select> -->
+
+            <div class="calculator2019">
+
+
+                <div class="dates">
+
+                    <div class="t-datepicker t-datepicker-flight">
+                        <div class="t-check-in"></div>
+                        <div class="t-check-out"></div>
+                    </div>
+
+                    <label class="checkbox">
+                        <input type="checkbox" name="t-datepicker-etgari" />
+                        <span class="title">מתוכנן בטיול ספורט אתגרי</span>
+                    </label>
+
+                    <div class="t-datepicker t-datepicker-etgari" style="display: none;">
+                        <div class="t-check-in"></div>
+                        <div class="t-check-out"></div>
+                    </div>
+
+                    <label class="checkbox">
+                        <input type="checkbox" name="t-datepicker-ski" />
+                        <span class="title">מתוכנן בטיול ספורט חורף</span>
+                    </label>
+
+                    <div class="t-datepicker t-datepicker-ski" style="display: none;">
+                        <div class="t-check-in"></div>
+                        <div class="t-check-out"></div>
+                    </div>
+
+
+                </div>
+
+                <ul class="fields">
+                    <li>
+                        <div class="num">נוסע 1:</div>
+                        <label class="age">
+                            <span class="title">גיל</span>
+                            <input type="number" pattern="[0-9]*" name="age" placeholder="גיל" />
+                        </label>
+                        <label>
+                            <span class="title">מצב רפואי</span>
+                            <select name="medical">
+                                <option value="0">ללא מצב רפואי</option>
+                                <option value="1">כולל מצב רפואי</option>
+                            </select>
+                        </label>
+                        <label>
+                            <span class="title">צד ג׳</span>
+                            <select name="gimel">
+                                <option value="1">כולל צד ג׳</option>
+                                <option value="0">ללא צד ג׳</option>
+                            </select>
+                        </label>
+                        <label>
+                            <span class="title">איתור וחילוץ</span>
+                            <select name="rescue">
+                                <option value="1">כולל איתור וחילוץ</option>
+                                <option value="0">ללא איתור וחילוץ</option>
+                            </select>
+                        </label>
+                        <label>
+                            <span class="title">כבודה</span>
+                            <select name="luggage">
+                                <option value="0">ללא כבודה</option>
+                                <option value="1">כולל כבודה</option>
+                            </select>
+                        </label>
+                        <label>
+                            <span class="title">ביטול או קיצור נסיעה</span>
+                            <select name="flightcancle">
+                                <option value="0">ללא ביטול או קיצור נסיעה</option>
+                                <option value="1">כולל קיצור או ביטול נסיעה</option>
+                            </select>
+                        </label>
+                        <label>
+                            <span class="title">הריון</span>
+                            <select name="pregnant">
+                                <option value="0">ללא כיסוי הריון</option>
+                                <option value="1">כולל כיסוי הריון</option>
+                            </select>
+                        </label>
+                        <label>
+                            <span class="title">טלפון נייד</span>
+                            <select name="phone">
+                                <option value="0">ללא כיסוי לטלפון</option>
+                                <option value="1">כולל כיסוי לטלפון</option>
+                            </select>
+                        </label>
+                        <label>
+                            <span class="title">לפטופ</span>
+                            <select name="laptop">
+                                <option value="0">ללא כיסוי לפטופ</option>
+                                <option value="1">כולל כיסוי לפטופ</option>
+                            </select>
+                        </label>
+                    </li>
+                </ul>
+
+                <button id="addperson">+ הוספת נוסע</button>
+
+                <button id="calculate">חישוב עלות ביטוח</button>
+
+                <div class="results tablewrap"></div>
+            </div>
+
+
+            <!-- <form action="" class="sectionSearchForm_form">
                 <div class="firstLineForm">
 
                     <input type="date" name="departureDate" id="departureDate" class="departure">
@@ -64,13 +437,13 @@
                     </label>
                 </div>
                 <div class="sectionSearchForm_form-personalInformation">
-                    <header class="personalInformationHeader">
+                    <header class="personalInformationHeader num">
                         <p>
                             נוסע: 1
                         </p>
                     </header>
                     <main class="personalInformationMain">
-                        <label for="" class="container">
+                        <label for="age" class="container">
                             גיל
                             <input type="number" name="age" id="age" class="age" min=1>
                         </label>
@@ -84,9 +457,9 @@
                             </select>
                         </label>
 
-                        <label for="" class="container">
+                        <label for="medical" class="container">
                             מצב רפואי
-                            <select name="arrivalDate" id="arrivalDate">
+                            <select name="medical" id="medical" >
                                 <option value="" disabled selected style="display: none;">ללא מצב רפואי</option>
                                 <option value="1">First</option>
                                 <option value="2">Second</option>
@@ -174,7 +547,7 @@
                     </footer>
                 </div>
                 <input type="submit" value="חישוב עלות ביטוח &larr;" class="btn">
-            </form>
+            </form> -->
 
         </div>
     </section>
@@ -186,55 +559,78 @@
 
                         <tr>
                             <th>חברה</th>
-                            <td><img src="img/svg/sixthCompanyLogo.svg" alt=""></td>
-                            <td><img src="img/svg/fifthCompanyLogo.svg" alt=""></td>
-                            <td><img src="img/svg/fourthCompanyLogo.svg" alt=""></td>
-                            <td><img src="img/svg/thirdCompanyLogo.svg" alt=""></td>
-                            <td><img src="img/svg/secondCompanyLogo.svg" alt=""></td>
-                            <td><img src="img/svg/firstCompanyLogo.svg" alt=""></td>
+                            <td><a
+                                    href="https://travel.harel-group.co.il/abroad-policy/?guid=bee1d408-c6a7-410e-b4ee-ac690224bdd3&an=11055"><img
+                                        src="img/svg/harel.svg" alt=""></a></td>
+                            <td><a href="https://sites.migdal.co.il/NahalApp/#/nahal/newPolicy/firstStep?id=201"><img
+                                        src="img/svg/migdal.svg" alt=""></a></td>
+                            <td><a
+                                    href="https://online.fnx.co.il/Travel/?fnx_ANum=L9sXObxg984%3d&referrer=insurance-online.co.il#"><img
+                                        src="img/svg/fenix.svg" alt=""></a></td>
+                            <td><a
+                                    href="https://www.passportcard.co.il/Purchase?AffiliateId=a9SzUY8MyfY3QxofVY21vQ%3D%3D&langID=1"><img
+                                        src="img/svg/passportcard.svg" alt=""></a></td>
+                            <td><a href="https://apps.menoramivt.co.il/TopTravel/?agentNum=910140#miniSite"><img
+                                        src="img/svg/menora.svg" alt=""></a></td>
+                            <td><a
+                                    href="https://shlomi.mynewsite.co.il/CLAL_TRAVEL_INSURANCE-%D7%91%D7%99%D7%98%D7%95%D7%97_%D7%9C%D7%97%D7%95%D7%9C.html"><img
+                                        src="img/svg/clal.svg" alt=""></a></td>
                         </tr>
 
                         <tr>
-                            <th>עד לסך ביטוח רפואי</th>
+                            <th>ביטוח רפואי עד לסך</th>
                             <td>5,000,000</td>
                             <td>5,000,000</td>
-                            <td>Unlimited סכום - ללא הגבלת</td>
+                            <td>ללא הגבלת סכום - Unlimited</td>
                             <td>5,000,000</td>
                             <td>2,000,000</td>
                             <td>5,000,000</td>
                         </tr>
                         <tr>
-                            <th>ההרחבה ניתן להסיר איתור וחילוץ</th>
-                            <td>0.20 - ליום
-                                250,000</td>
-                            <td>0.20 - ליום
-                                500,000</td>
-                            <td>0.20 - ליום
-                                250,000</td>
-                            <td>0.20 - ליום
-                                250,000</td>
-                            <td>0.20 - ליום
-                                250,000</td>
+                            <th>איתור וחילוץ
+                                <br><span class="_markedRed"> ניתן להסיר ההרחבה</span>
+                            </th>
+                            <td>500,000
+                                <br><span class="_markedRed">0.20- ליום</span>
+                            </td>
+                            <td>500,000
+                                <br><span class="_markedRed">0.20- ליום</span>
+                            </td>
+                            <td>250,000
+                                <br><span class="_markedRed">0.20- ליום</span>
+                            </td>
+                            <td>250,000
+                                <br><span class="_markedRed">0.20- ליום</span>
+                            </td>
+                            <td>250,000
+                                <br><span class="_markedRed">0.43- ליום</span>
+                            </td>
                             <td>
-                                200,000 <br>
-                                0.44 - ליום <br>
-                                םויל-0.22 ליג 0-18
+                                200,000
+                                <br><span class="_markedRed">0.44- ליום
+                                    גיל 0-18 0.22-ליום</span>
                             </td>
                         </tr>
                         <tr>
                             <th>צד שלישי</th>
-                            <td>כלול ללא עלות 250,000</td>
-                            <td>0.40 - ליום
-
-                                150,000</td>
-                            <td>כלול ללא עלות 250,000</td>
-                            <td>כלול ללא עלות 100,000</td>
-                            <td>0.40 - ליום
-
-                                100,000</td>
-                            <td>0.40 - ליום
-
-                                150,000</td>
+                            <td>150,000
+                                <br><span class="_markedRed">כלול ללא עלות</span>
+                            </td>
+                            <td>150,000
+                                <br><span class="_markedRed">כלול ללא עלות</span>
+                            </td>
+                            <td>250,000
+                                <br><span class="_markedRed">כלול ללא עלות</span>
+                            </td>
+                            <td>100,000
+                                <br><span class="_markedRed">כלול ללא עלות</span>
+                            </td>
+                            <td>100,000
+                                <br><span class="_markedRed">0.14 - ליום</span>
+                            </td>
+                            <td>150,000
+                                <br><span class="_markedRed">0.04- ליום</span>
+                            </td>
                         </tr>
                         <tr>
                             <th>פינוי יבשתי</th>
@@ -246,7 +642,7 @@
                             <td>כלול</td>
                         </tr>
                         <tr>
-                            <th>רפואית לארץ הטסה</th>
+                            <th>הטסה רפואית לארץ</th>
                             <td>כלול</td>
                             <td>כלול</td>
                             <td>כלול</td>
@@ -255,7 +651,7 @@
                             <td>כלול</td>
                         </tr>
                         <tr>
-                            <th>אווירי/ימי פינוי</th>
+                            <th>פינוי אווירי/ימי</th>
                             <td>כלול</td>
                             <td>כלול</td>
                             <td>כלול</td>
@@ -273,7 +669,7 @@
                             <td>כלול</td>
                         </tr>
                         <tr>
-                            <th>שיניים טיפול חירום</th>
+                            <th>טיפול חירום שיניים</th>
                             <td>400</td>
                             <td>1000</td>
                             <td>כלול</td>
@@ -291,68 +687,82 @@
                             <td>כלול</td>
                         </tr>
                         <tr>
-                            <th>בחו"ל לראשונה הריון שהתגלה</th>
-                            <td>150$ ליום</td>
-                            <td>עד $2,500 150$ ליום</td>
-                            <td>100$ ליום</td>
-                            <td>100$ ליום</td>
-                            <td>עד $3,000 100$ ליום</td>
-                            <td>100$ ליום</td>
+                            <th>הריון שהתגלה לראשונה בחו"ל</th>
+                            <td>כלול</td>
+                            <td>כלול</td>
+                            <td>10,000</td>
+                            <td>כלול</td>
+                            <td>כלול</td>
+                            <td>כלול</td>
                         </tr>
                         <tr>
-                            <th>ביטוח מעבר לתקופת לינה בחו"ל</th>
-                            <td>עד 10,000$</td>
+                            <th>לינה בחו"ל מעבר לתקופת ביטוח</th>
+                            <td>150 $ ליום</td>
+                            <td>150 $ ליום עד 2,500 $</td>
+                            <td>100 $ ליום</td>
+                            <td>100 $ ליום</td>
+                            <td>100 $ ליום
+                                עד 3,000 $</td>
+                            <td>100 $ ליום</td>
+                        </tr>
+                        <tr>
+                            <th>המשך טיפול בארץ עקב תאונה בחו"ל</th>
+                            <td>עד 10,000 $</td>
                             <td>-</td>
-                            <td>10 $ לנוסע/ת עד $ 5,000, בעלות ניתן לרכוש ביטוח</td>
+                            <td>ניתן לרכוש ביטוח עד 5,000 $, בעלות
+                                <br><span class="_markedRed">10 $ לנוסע/ת</span>
+                            </td>
                             <td>-</td>
                             <td>-</td>
                             <td>-</td>
                         </tr>
                         <tr>
-                            <th>תאונה בחו"ל בארץ עקב המשך טיפול</th>
-                            <td>עד 10,000$</td>
-                            <td>-</td>
-                            <td>10 $ לנוסע/ת עד $ 5,000, בעלות ניתן לרכוש ביטוח</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <th>למבוטח לישראל כרטיס נסיעה</th>
-                            <td>עד 1000$</td>
-                            <td>עד 1500$</td>
-                            <td>עד 1500$</td>
-                            <td>עד 1000$ עד 1500$ למלווה </td>
-                            <td>עד 1500$</td>
-                            <td>עד 1500$ עד 1500$ למלווה </td>
+                            <th>כרטיס נסיעה
+                                לישראל למבוטח</th>
+                            <td>עד 1000 $</td>
+                            <td>עד 1500 $</td>
+                            <td>עד 1500 $</td>
+                            <td>עד 1500 $
+                                עד 1000 $ למלווה</td>
+                            <td>עד 1500 $</td>
+                            <td>עד 1500 $
+                                עד 1500 $ למלווה</td>
                         </tr>
                         <tr>
                             <th>הוצאות מילוט</th>
                             <td>-</td>
-                            <td>1500</td>
+                            <td>1,500</td>
                             <td>-</td>
                             <td>-</td>
                             <td>-</td>
                             <td>-</td>
                         </tr>
                         <tr>
-                            <th>לחו"ל משפחה קרוב הטסת בן</th>
-                            <td>שהייה בחו"ל כולל הוצאות עד 2500$</td>
-                            <td>עד 1500$</td>
-                            <td>עד 1500$</td>
-                            <td>עד 1000$ ליום הוצאות לינה עד 2000$+100$</td>
-                            <td>לינה עד 2000$ +100$ ליום הוצ הוצ. נסיעה עד 2000$+100$</td>
-                            <td>+ 100$ ליום עד 2000$</td>
+                            <th>הטסת בן משפחה קרוב לחו"ל</th>
+                            <td>עד 2500 $
+                                כולל הוצאות שהייה בחו"ל</td>
+                            <td>עד 1,500 $</td>
+                            <td>עד 1,500 $</td>
+                            <td>עד 2,000 $ + 100 $
+                                ליום הוצאות לינה עד 1,000 $</td>
+                            <td>עד 2,000 $ + 100 $ הוצ. נסיעה
+                                + 100 $ ליום הוצ לינה עד 2,000 $</td>
+                            <td>עד 2,000 $
+                                + 100 $ ליום</td>
                         </tr>
                         <tr>
-                            <th>עצמית השתתפות</th>
-                            <td>$50</td>
-                            <td>רפואיות עצמית בהוצאות ללא השתתפות</td>
-                            <td>עצמית ללא השתתפות</td>
-                            <td>השתתפות עצמית drac ללא בכרטיס -tropssap בעת שימוש</td>
-                            <td>$30</td>
-                            <td>$50</td>
+                            <th>השתתפות עצמית</th>
+                            <td>50 $</td>
+                            <td>ללא השתתפות
+                                עצמית בהוצאות
+                                רפואיות</td>
+                            <td>ללא השתתפות עצמית</td>
+                            <td>בעת שימוש בכרטיס passport-
+                                card ללא השתתפות עצמית</td>
+                            <td>30 $</td>
+                            <td>50 $</td>
                         </tr>
+
 
                     </table>
                 </div>
@@ -373,15 +783,25 @@
                         <tr>
 
                             <th>חברה</th>
-                            <td><img src="img/svg/sixthCompanyLogo.svg" alt=""></td>
-                            <td><img src="img/svg/fifthCompanyLogo.svg" alt=""></td>
-                            <td><img src="img/svg/fourthCompanyLogo.svg" alt=""></td>
-                            <td><img src="img/svg/thirdCompanyLogo.svg" alt=""></td>
-                            <td><img src="img/svg/secondCompanyLogo.svg" alt=""></td>
-                            <td><img src="img/svg/firstCompanyLogo.svg" alt=""></td>
+                            <td><a
+                                    href="https://travel.harel-group.co.il/abroad-policy/?guid=bee1d408-c6a7-410e-b4ee-ac690224bdd3&an=11055"><img
+                                        src="img/svg/harel.svg" alt=""></a></td>
+                            <td><a href="https://sites.migdal.co.il/NahalApp/#/nahal/newPolicy/firstStep?id=201"><img
+                                        src="img/svg/migdal.svg" alt=""></a></td>
+                            <td><a
+                                    href="https://online.fnx.co.il/Travel/?fnx_ANum=L9sXObxg984%3d&referrer=insurance-online.co.il#"><img
+                                        src="img/svg/fenix.svg" alt=""></a></td>
+                            <td><a
+                                    href="https://www.passportcard.co.il/Purchase?AffiliateId=a9SzUY8MyfY3QxofVY21vQ%3D%3D&langID=1"><img
+                                        src="img/svg/passportcard.svg" alt=""></a></td>
+                            <td><a href="https://apps.menoramivt.co.il/TopTravel/?agentNum=910140#miniSite"><img
+                                        src="img/svg/menora.svg" alt=""></a></td>
+                            <td><a
+                                    href="https://shlomi.mynewsite.co.il/CLAL_TRAVEL_INSURANCE-%D7%91%D7%99%D7%98%D7%95%D7%97_%D7%9C%D7%97%D7%95%D7%9C.html"><img
+                                        src="img/svg/clal.svg" alt=""></a></td>
                         </tr>
                         <tr>
-                            <th>מחלה קיימת החמרה של</th>
+                            <th>החמרה של מחלה קיימת</th>
                             <td>350,000</td>
                             <td>350,000</td>
                             <td>500,000</td>
@@ -390,7 +810,7 @@
                             <td>250,000</td>
                         </tr>
                         <tr>
-                            <th>או גניבה אישי אובדן כבודה-מטען</th>
+                            <th>כבודה-מטען אישי אובדן או גניבה</th>
                             <td>2,250</td>
                             <td>2,500</td>
                             <td>2,500</td>
@@ -400,204 +820,231 @@
                         </tr>
                         <tr>
                             <th>ביטול נסיעה</th>
-                            <td>עד 5,000$</td>
-                            <td>עד 6,000$</td>
-                            <td>עד 6,000$</td>
-                            <td>עד 4,000$</td>
-                            <td>עד 6,000$</td>
-                            <td>עד 7,000$</td>
+                            <td>עד 5,000 $</td>
+                            <td>עד 6,000 $</td>
+                            <td>עד 6,000 $</td>
+                            <td>עד 4,000 $</td>
+                            <td>עד 6,000 $</td>
+                            <td>עד 7,000 $</td>
                         </tr>
                         <tr>
-                            <th>רפואי קורונה ביטול אירוע</th>
-                            <td>לכרטיס טיסה עד 400$</td>
-                            <td>לכרטיס טיסה עד 400$</td>
+                            <th>ביטול אירוע רפואי קורונה</th>
+                            <td>עד 400 $ לכרטיס טיסה</td>
+                            <td>עד 400 $ לכרטיס טיסה</td>
                             <td>-</td>
-                            <td>טיסה עד 500$ לכרטיס</td>
+                            <td>עד 500 $ לכרטיס טיסה</td>
                             <td>-</td>
-                            <td>עד 5,000$</td>
+                            <td>עד 5,000 $</td>
                         </tr>
                         <tr>
-                            <th>בידוד בעקבות ביטול</th>
-                            <td>לכרטיס טיסה עד 400$</td>
-                            <td>לכרטיס טיסה עד 400$</td>
+                            <th>ביטול בעקבות בידוד</th>
+                            <td>עד 400 $ לכרטיס טיסה</td>
+                            <td>עד 400 $ לכרטיס טיסה</td>
                             <td>-</td>
-                            <td>טיסה עד 500$ לכרטיס</td>
+                            <td>עד 500 $ לכרטיס טיסה</td>
                             <td>-</td>
-                            <td>טיסה עד 500$ לכרטיס</td>
+                            <td>עד 500 $ לכרטיס טיסה</td>
                         </tr>
                         <tr>
                             <th>קיצור נסיעה</th>
-                            <td>עד 7,000$</td>
-                            <td>עד 6,000$</td>
-                            <td>עד 6,000$</td>
-                            <td>עד 4,000$</td>
-                            <td>עד 6,000$</td>
-                            <td>עד 8,000$</td>
+                            <td>עד 7,000 $</td>
+                            <td>עד 6,000 $</td>
+                            <td>עד 6,000 $</td>
+                            <td>עד 4,000 $</td>
+                            <td>עד 6,000 $</td>
+                            <td>עד 8,000 $</td>
                         </tr>
                         <tr>
-                            <th>רפואי קורונה קיצור אירוע הארכה או</th>
-                            <td>עד 1000$</td>
-                            <td>עד 1000$</td>
+                            <th>הארכה או קיצור אירוע רפואי קורונה</th>
+                            <td>עד 1,000 $</td>
+                            <td>עד 1,000 $</td>
                             <td>אין</td>
                             <td>אין</td>
                             <td>אין</td>
-                            <td>עד 5000$</td>
+                            <td>עד 5,000 $</td>
                         </tr>
                         <tr>
-                            <th>רפואי קורונה אירוע הרחבת מגן</th>
-                            <td>3,5$ ליום</td>
-                            <td>ליום מגיל 61 - 10,6$ 3,5$ ליום</td>
-                            <td>ליום ללא תו ירוק 5,2$ תו ירוק 5,1$ ליום</td>
-                            <td>ולא יותר מ - 50$ בעלות 2,5$ ליום</td>
+                            <th>הרחבת מגן קורונה אירוע רפואי</th>
+                            <td>3,5 $ ליום</td>
+                            <td>3,5 $ ליום
+                                מגיל 61 - 10.6 $ ליום</td>
+                            <td>תו ירוק 1,5 $ ליום
+                                ללא תו ירוק 2,5 $ ליום</td>
+                            <td>בעלות 2,5 $ ליום
+                                ולא יותר מ - 50 $</td>
                             <td>אין</td>
-                            <td>עלות נוספת כלול ללא</td>
+                            <td>כלול ללא עלות נוספת</td>
                         </tr>
                         <tr>
                             <th>ביטול נסיעה</th>
                             <td>עד 5,000$</td>
                             <td>עד 5,000$</td>
-                            <td>בידוד טיסה בעקבות עד 400$ לכרטיס עד 6,000$</td>
+                            <td>עד 6,000 $
+                                עד 400 $ לכרטיס
+                                טיסה בעקבות בידוד</td>
                             <td>עד 4,000$</td>
                             <td>אין</td>
-                            <td>עלות נוספת כלול ללא</td>
+                            <td>כלול ללא עלות נוספת</td>
                         </tr>
                         <tr>
-                            <th>הארכת נסיעה קיצור או</th>
+                            <th>קיצור או הארכת נסיעה</th>
                             <td>עד 5,000$</td>
                             <td>עד 5,000$</td>
                             <td>עד 3,000$</td>
                             <td>עד 5,000$</td>
                             <td>אין</td>
-                            <td>תפסונ תולע אלל לולכ</td>
+                            <td>כלול ללא עלות נוספת</td>
                         </tr>
                         <tr>
-                            <th>תעריף ליום הריון</th>
-                            <td>ארה" 8,50$ 6.50$ 300,000</td>
-                            <td>200,000 4$</td>
-                            <td>250,000 3.00$</td>
-                            <td>250,000 5$</td>
-                            <td>ארה" 7,48$ 4.40$ 300,000</td>
-                            <td>200,000 7.5$</td>
+                            <th>הריון
+                                תעריף ליום</th>
+                            <td>350,000
+                                <br><span class="_markedRed">6.50$
+                                    ארה" 8.50 $</span>
+                            </td>
+                            <td>200,000
+                                <br><span class="_markedRed">4 $</span>
+                            </td>
+                            <td>250,000
+                                <br><span class="_markedRed">3.00 $</span>
+                            </td>
+                            <td>250,000
+                                <br><span class="_markedRed">5 $</span>
+                            </td>
+                            <td>300,000
+                                <br><span class="_markedRed">4.40$
+                                    ארה" 7.48 $</span>
+                            </td>
+                            <td>200,000
+                                <br><span class="_markedRed">7.5$</span>
+                            </td>
                         </tr>
                         <tr>
-                            <th>תעריף ליום ספורט אתגרי</th>
-                            <td>1,00$ ליום</td>
-                            <td>0,60$ ליום</td>
-                            <td>0,50$ ליום</td>
-                            <td>מעל 30 יום 1,00$ 0,50$, ליום</td>
-                            <td>1,00$ ליום</td>
-                            <td>0,46$ ליום</td>
+                            <th>ספורט אתגרי
+                                <br><span class="_markedRed">תעריף ליום</span>
+                            </th>
+                            <td>1,00 $ ליום</td>
+                            <td>0,60 $ ליום</td>
+                            <td>0,50 $ ליום</td>
+                            <td> 0.50 $, ליום
+                                מעל 30 יום 1.00$</td>
+                            <td>1,00 $ ליום</td>
+                            <td>0,46 $ ליום</td>
                         </tr>
                         <tr>
                             <th>ספורט תחרותי</th>
                             <td>אין</td>
-                            <td>מקסימום 20$ 2,50$ ליום</td>
-                            <td>25$ לכל התקופה</td>
+                            <td>2.50 $ ליום
+                                מקסימום 20 $</td>
+                            <td>25 $ לכל התקופה</td>
                             <td>פנייה טלפונית</td>
                             <td>אין</td>
                             <td>אין</td>
                         </tr>
                         <tr>
-                            <th>סקי תעריף ליום ספורט חורף -</th>
-                            <td>9,50$ ליום</td>
-                            <td>6,50$ ליום</td>
-                            <td>7,00$ ליום</td>
-                            <td>7,00$ ליום</td>
-                            <td>4,00$ ליום</td>
-                            <td>6,38$ ליום</td>
+                            <th>ספורט חורף - סקי תעריף ליום</th>
+                            <td>9.50 $ ליום</td>
+                            <td>6,50 $ ליום</td>
+                            <td>7,00 $ ליום</td>
+                            <td>7,00 $ ליום</td>
+                            <td>4,00 $ ליום</td>
+                            <td>6,38 $ ליום</td>
                         </tr>
                         <tr>
-                            <th>תעריף ליום / גיל נכות מתאונה מוות מתאונה / תאונות אישיות:</th>
+                            <th>תאונות אישיות: מוות מתאונה / נכות מתאונה
+                                תעריף ליום / גיל</th>
                             <td>
-                                עד גיל 60 0,29$ ליום
-                                <br>
-                                עד גיל 50 0,10$ ליום
-                                <br>
-                                עד גיל 40 0,20$ ליום
-                                <br>
-                                מוות 000.50$ אבדן אברים 13,500$
+                                מוות 50,000 $ אבדן אברים 13,500 $
+                                עד גיל 40 0.02 $ ליום
+                                עד גיל 50 0.10 $ ליום
+                                עד גיל 60 0.29 $ ליום
+                                עד גיל 70 0.39 $ ליום
+                                עד גיל 75 0.52 $ ליום
                             </td>
-                            <td>0,50$ ליום
-
-                                20,000$</td>
+                            <td>20,000 $
+                                0.50 $ ליום</td>
                             <td>
-                                0,50$ ליום גיל 18-70 50,000$
+                                גיל 18-70 50,000 $
+                                0,50 $ ליום
                             </td>
-                            <td>
-
-                                גיל 18-67 30,000$
-                                <br>
-                                גיל עד 17 ומ- 68
-                                <br>
-                                15,000$
-                                <br>
-                                0.70$ ליום
-                                <br>
-                            </td>
+                            <td>גיל 18-67 30,000 $ גיל עד 17 ומ- 68 15,000 $
+                                0.70 $ ליום</td>
                             <td>אין</td>
-                            <td>0,06$ ליום עד ניל 75</td>
+                            <td>עד ניל 75
+                                0.06 $ ליום</td>
                         </tr>
                         <tr>
-                            <th>שכור תאונה ברכב עצמית במקרה ביטול השתתפות</th>
+                            <th>ביטול השתתפות עצמית במקרה תאונה ברכב שכור</th>
                             <td>
                                 עד 1,500$
+                                6.50 $ ליום
                             </td>
                             <td>
-                                עד 1,500$
-                                <br>
-                                8,00$ ליום
+                                עד 1,500 $
+                                6.50 $ ליום
                             </td>
                             <td>
-                                עד 2,000$
-                                <br>
-                                פרט 6,00$ ליום
-                                <br>
-                                קרוון 15,00$ ליום
+                                עד 2,000 $
+                                פרט 6,00 $ ליום
+                                קרוון 15,00 $ ליום
                             </td>
-                            <td>8,00$ ליום עד $1,500</td>
+                            <td>עד 1,500$
+                                8.00 $ ליום</td>
                             <td>לא קיים</td>
                             <td>אין</td>
                         </tr>
                         <tr>
                             <th>טלפון נייד</th>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>1.60$ ליום 800$ גניבה בלבד עד</td>
+                            <td>אובדן או גניבה עד 750 $
+                                1,60 $ ליום</td>
+                            <td>אובדן או גניבה עד 1,000 $ $
+                                1,90 $ ליום</td>
+                            <td>גניבה בלבד עד 1,000 $
+                                0.80$ ליום</td>
+                            <td>גניבה בלבד עד 800 $
+                                1,60 $ ליום</td>
                             <td>אין</td>
-                            <td>
-                                אובדן או
-                                <br>
-                                גניבה עד
-                                <br>
-                                2000$
-                                <br>
-                                1,32$ ליום
+                            <td>אובדן או גניבה עד 2,000 $
+                                1,32 $ ליום
                             </td>
                         </tr>
                         <tr>
-                            <th>טאבלט מחשב נייד /</th>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <th>מחשב נייד / טאבלט</th>
+                            <td>אובדן או גניבה עד 2,000$
+                                1,32 $ ליום</td>
+                            <td>אובדן או גניבה עד 1,200 $
+                                1,00 $ ליום</td>
+                            <td>750$
+                                0,50 $ ליום</td>
+                            <td>גניבה עד 2,000 $
+                                0,80 $ ליום</td>
+                            <td>אובדן או גניבה עד 1,200$
+                                0,80 $ ליום</td>
+                            <td>אובדן או גניבה עד 2,000$
+                                2,00 $ ליום</td>
                         </tr>
                         <tr>
                             <th>מצלמה</th>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>קיים בכבודה עד 350 $</td>
+                            <td>קיים בכבודה עד 300 $</td>
+                            <td>גניבה בלבד
+                                עד
+                                2000$
+                                1.00 $ ליום</td>
+                            <td>גניבה בלבד
+                                עד
+                                750 /1500 /2000$
+                                0.50 $/1.00 $/1.50 $ ליום</td>
+                            <td>קיים בכבודה עד 350 $</td>
+                            <td>קיים בכבודה עד 400 $</td>
                         </tr>
                         <tr>
-                            <th>םיינפוא</th>
-                            <td></td>
+                            <th>אופניים</th>
+                            <td>אובדן או גניבה
+                                עד 2,500 $ 1.33 $ ליום עד 4,000 $ 2.46 $ ליום עד 6,000 $ 3.00 $ ליום</td>
                             <td>אין</td>
-                            <td></td>
+                            <td>נזק מתאונה
+                                עד 2,500 $ 200 $ עד 7,500 $ 500 $</td>
                             <td>אין</td>
                             <td>אין</td>
                             <td>אין</td>
@@ -808,6 +1255,10 @@
             </div>
         </div>
     </footer>
+
+    <script src="calculator2019/js/jquery-3.3.1.min.js"></script>
+    <script src="calculator2019/js/t-datepicker.js"></script>
+    <script src="calculator2019/js/custom.js"></script>
 </body>
 
 </html>
