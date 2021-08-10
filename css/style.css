@@ -684,6 +684,7 @@ input {
   height: 5.625rem;
   color: #5A5A5A;
   text-align: center;
+  padding: 0.625rem;
 }
 
 .sectionFirstTable .firstTable td img {
@@ -748,6 +749,7 @@ input {
   height: 5.625rem;
   color: #5A5A5A;
   text-align: center;
+  padding: 0.625rem;
 }
 
 .sectionSecondTable .secondTable td img {
