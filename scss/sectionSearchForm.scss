@@ -244,15 +244,19 @@
       .calculator2021 .fields {
           margin: 0 0 toRem(20) 0;
           padding: 0;
-          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.199);
-      }
-
-      
-      .calculator2021 .fields li {
-          display: flex;
-          flex-wrap: wrap;
-          margin: 15px 0 0 0;
-          background: #fafafa;
+        //   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.199);
+        }
+        
+        
+        .calculator2021 .fields li {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 15px 0 0 0;
+            background: #fafafa;
+            margin-bottom: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.199);
+            padding-left: 10px;
+            padding-right: 10px;
         //   border-radius: 3px;
         // min-height: toRem(264);
       }
@@ -290,11 +294,15 @@
       
       .calculator2021 .fields li .lastInput{
         width: 100%;
+        padding-bottom: 20px;
     }
       .calculator2021 .fields li label {
           width: 20%;
           position: relative;
           padding: toRem(10);
+          &:first-child{
+              padding-right: 100px;
+          }
           .lastInput{
               width: toRem(667);
           }
@@ -484,6 +492,32 @@
         width: toRem(20);
         height: toRem(20);
     } 
+
+    // .tablewrap-inner{
+    //     @include AlmoniRegular(18);
+    //     margin-top: toRem(20);
+
+    //     table{
+    //         width: 100%;
+    //             border-collapse: collapse;
+
+    //         th, td {
+    //             border: 1px solid #CCC;
+    //             height: toRem(50);
+    //             text-align: center;
+    //             color: #00549B;
+    //         }
+    //         th{
+    //             width: toRem(200);
+    //         }
+    //         tr:last-child{
+    //             th, td {
+    //                 color: #FFF;
+    //                 background-color: #00549B;
+    //             }
+    //         }
+    //     }
+    // }    
     .tablewrap-inner{
         @include AlmoniRegular(18);
         margin-top: toRem(20);
@@ -498,8 +532,14 @@
                 text-align: center;
                 color: #00549B;
             }
-            th{
-                width: toRem(200);
+            tr{
+                th:first-child,
+                td:first-child{
+                    width: toRem(293);
+                    color: #00549B;
+                    padding-right: toRem(20);
+                    padding-left: toRem(150);
+                }
             }
             tr:last-child{
                 th, td {
