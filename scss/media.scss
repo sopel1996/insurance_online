@@ -7,7 +7,6 @@
         max-height: toRem(654);
         padding: toRem(20) 0 ;
         .sectionVideo_media{
-
             iframe{
                 width: toRem(630);
                 height: toRem(450);
@@ -17,21 +16,38 @@
 }
 @media (max-width: 1000px) {
     .sectionVideo{
-
         .sectionVideo_media{
-
             iframe{
                 width: toRem(500);
                 height: toRem(350);
             }
         } 
     } 
-    
 }
-@media (max-width: 860px) {
-
+@media (max-width: 900px) {
+    .sectionFirstTable{
+        .firstTable{
+            th{
+                padding-left: toRem(5);
+            }
+            td{
+                padding: toRem(5);
+                font-size: toRem(16);
+            }
+        }
+    }
+    .sectionSecondTable{
+        .secondTable{
+            th{
+                padding-left: toRem(5);
+            }
+            td{
+                padding: toRem(5);
+                font-size: toRem(16);
+            }
+        }
+    }
     .sectionVideo{
-
         .sectionVideo_list{
             .textBetweenLists{
                 font-size: toRem(16);
@@ -40,17 +56,57 @@
                 font-size: toRem(15);
             }
         }
-    }
-
-    .sectionVideo{
-
         .sectionVideo_media{
-
             iframe{
                 width: toRem(395);
                 height: toRem(275);
             }
         } 
-    } 
-    
+    }
+}
+@media (max-width: 768px) {
+    .sectionSearchForm .calculator2019 .fields li label{
+        padding: toRem(10);
+        &::before{
+            left: toRem(17);
+        }
+    }
+    .sectionSearchForm .calculator2019 .fields li label span.title,
+    .sectionSearchForm .calculator2019 .fields li label select,
+    .sectionSearchForm .calculator2019 .fields li label input{
+        font-size: toRem(15);
+    }
+    .sectionFooter{
+        .sectionFooter_firstLine{
+            .footerImg{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .sectionSearchForm {
+        .calculator2019 .fields li{
+            flex-direction: column;
+            .lastInput{
+                width: 100%;
+            }
+            & label{
+                width: 100%;
+                & select{
+                    width: 100%;
+                }
+            }
+        }
+        .t-datepicker{
+            flex-direction: column;
+            
+        }
+        .t-check-in,
+        .t-check-out{
+            margin-bottom: toRem(10);
+        }
+    }
+
 }

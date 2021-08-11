@@ -13,6 +13,7 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 1.875rem;
+  width: 100%;
 }
 .sectionFooter .sectionFooter_firstLine .footerImg {
   margin-bottom: 2.5rem;

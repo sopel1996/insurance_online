@@ -557,11 +557,17 @@ input {
   color: #fff;
   position: relative;
 }
+.sectionSearchForm .calculator2019 .fields li .lastInput {
+  width: 41.6875rem;
+}
 .sectionSearchForm .calculator2019 .fields li label {
   width: 20%;
   padding: 0.3125rem;
   position: relative;
   padding: 1.25rem;
+}
+.sectionSearchForm .calculator2019 .fields li label .lastInput {
+  width: 41.6875rem;
 }
 .sectionSearchForm .calculator2019 .fields li label span.title {
   display: block;
@@ -723,48 +729,6 @@ input {
 .sectionSearchForm .t-input {
   display: none;
 }
-.sectionSearchForm .calculator2019 table {
-  border: 1px #ececec solid;
-  width: 100%;
-  border-collapse: collapse;
-}
-.sectionSearchForm .calculator2019 table th, .sectionSearchForm table td {
-  border: 1px #ececec solid;
-  padding: 5px;
-  width: calc(100%/8);
-}
-.sectionSearchForm .calculator2019 table th {
-  font-weight: bold;
-  vertical-align: middle;
-}
-.sectionSearchForm .calculator2019 table th img {
-  max-width: 80%;
-  max-height: 38px;
-}
-.sectionSearchForm .calculator2019 table th:first-child {
-  background: #069;
-  color: #fff;
-  font-size: 16px;
-}
-.sectionSearchForm .calculator2019 table td {
-  text-align: center;
-  font-weight: bold;
-  color: #001AB4;
-}
-.sectionSearchForm .calculator2019 table td:first-child {
-  text-align: right;
-  font-weight: bold;
-  color: #001AB4;
-}
-.sectionSearchForm .calculator2019 table tr:hover td {
-  background: #fafafa;
-}
-.sectionSearchForm .calculator2019 .results table tr:last-child td,
-.sectionSearchForm .calculator2019 .results table tr:last-child:hover td {
-  background: #f4f9f0;
-  font-weight: bold;
-  color: #2e7900;
-}
 .sectionSearchForm .calculator2019 .tablewrap ul {
   display: none;
 }
@@ -777,6 +741,23 @@ input {
   font-weight: 500;
   font-size: 1.125rem;
   margin-top: 1.25rem;
+}
+.sectionSearchForm .tablewrap-inner table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.sectionSearchForm .tablewrap-inner table th, .sectionSearchForm .tablewrap-inner table td {
+  border: 1px solid #CCC;
+  height: 3.125rem;
+  text-align: center;
+  color: #00549B;
+}
+.sectionSearchForm .tablewrap-inner table th {
+  width: 12.5rem;
+}
+.sectionSearchForm .tablewrap-inner table tr:last-child th, .sectionSearchForm .tablewrap-inner table tr:last-child td {
+  color: #FFF;
+  background-color: #00549B;
 }
 
 .sectionFirstTable {
@@ -808,7 +789,6 @@ input {
   height: 5.625rem;
   color: #5A5A5A;
   text-align: center;
-  padding: 0.625rem;
 }
 .sectionFirstTable .firstTable td img {
   width: 100%;
@@ -864,7 +844,6 @@ input {
   height: 5.625rem;
   color: #5A5A5A;
   text-align: center;
-  padding: 0.625rem;
 }
 .sectionSecondTable .secondTable td img {
   width: 100%;
@@ -1045,6 +1024,7 @@ input {
   align-items: center;
   justify-content: center;
   margin-bottom: 1.875rem;
+  width: 100%;
 }
 .sectionFooter .sectionFooter_firstLine .footerImg {
   margin-bottom: 2.5rem;
@@ -1115,16 +1095,71 @@ input {
     height: 21.875rem;
   }
 }
-@media (max-width: 860px) {
+@media (max-width: 900px) {
+  .sectionFirstTable .firstTable th {
+    padding-left: 0.3125rem;
+  }
+  .sectionFirstTable .firstTable td {
+    padding: 0.3125rem;
+    font-size: 1rem;
+  }
+
+  .sectionSecondTable .secondTable th {
+    padding-left: 0.3125rem;
+  }
+  .sectionSecondTable .secondTable td {
+    padding: 0.3125rem;
+    font-size: 1rem;
+  }
+
   .sectionVideo .sectionVideo_list .textBetweenLists {
     font-size: 1rem;
   }
   .sectionVideo .sectionVideo_list .list {
     font-size: 0.9375rem;
   }
-
   .sectionVideo .sectionVideo_media iframe {
     width: 24.6875rem;
     height: 17.1875rem;
+  }
+}
+@media (max-width: 768px) {
+  .sectionSearchForm .calculator2019 .fields li label {
+    padding: 0.625rem;
+  }
+  .sectionSearchForm .calculator2019 .fields li label::before {
+    left: 1.0625rem;
+  }
+
+  .sectionSearchForm .calculator2019 .fields li label span.title,
+.sectionSearchForm .calculator2019 .fields li label select,
+.sectionSearchForm .calculator2019 .fields li label input {
+    font-size: 0.9375rem;
+  }
+
+  .sectionFooter .sectionFooter_firstLine .footerImg {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 576px) {
+  .sectionSearchForm .calculator2019 .fields li {
+    flex-direction: column;
+  }
+  .sectionSearchForm .calculator2019 .fields li .lastInput {
+    width: 100%;
+  }
+  .sectionSearchForm .calculator2019 .fields li label {
+    width: 100%;
+  }
+  .sectionSearchForm .calculator2019 .fields li label select {
+    width: 100%;
+  }
+  .sectionSearchForm .t-datepicker {
+    flex-direction: column;
+  }
+  .sectionSearchForm .t-check-in,
+.sectionSearchForm .t-check-out {
+    margin-bottom: 0.625rem;
   }
 }
