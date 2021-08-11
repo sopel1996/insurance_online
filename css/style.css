@@ -411,7 +411,7 @@ input {
   min-height: 72.8125rem;
   width: 100%;
   background: url(/img/png/sectionSearchBg.jpg) 50% 50% no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
   position: relative;
   overflow: hidden;
   /* New Picker */
@@ -425,7 +425,7 @@ input {
   left: 0;
   bottom: 0;
   background: #c6c6c6;
-  background: linear-gradient(180deg, rgba(198, 198, 198, 0.7) 0%, white 60%, white 100%);
+  background: linear-gradient(180deg, rgba(198, 198, 198, 0.6) 0%, rgba(255, 255, 255, 0.9) 60%, white 100%);
 }
 .sectionSearchForm .sectionInner {
   position: relative;
@@ -471,6 +471,7 @@ input {
 .sectionSearchForm .calculator2019 a img {
   display: block;
   margin: 0 auto;
+  width: 100%;
 }
 .sectionSearchForm .buy a p {
   direction: rtl;
@@ -1081,7 +1082,7 @@ input {
   }
 
   .sectionVideo {
-    max-height: 40.875rem;
+    height: 40.875rem;
     padding: 1.25rem 0;
   }
   .sectionVideo .sectionVideo_media iframe {
@@ -1096,6 +1097,23 @@ input {
   }
 }
 @media (max-width: 900px) {
+  .sectionSearchForm .calculator2019 .fields li label {
+    padding: 0.625rem;
+  }
+  .sectionSearchForm .calculator2019 .fields li label::before {
+    left: 1.0625rem;
+  }
+
+  .sectionSearchForm .calculator2019 .fields li label span.title,
+.sectionSearchForm .calculator2019 .fields li label select,
+.sectionSearchForm .calculator2019 .fields li label input {
+    font-size: 0.9375rem;
+  }
+
+  .sectionSearchForm .calculator2019 .fields li .lastInput {
+    width: 100%;
+  }
+
   .sectionFirstTable .firstTable th {
     padding-left: 0.3125rem;
   }
@@ -1142,7 +1160,7 @@ input {
     height: auto;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 700px) {
   .sectionSearchForm .calculator2019 .fields li {
     flex-direction: column;
   }
@@ -1161,5 +1179,20 @@ input {
   .sectionSearchForm .t-check-in,
 .sectionSearchForm .t-check-out {
     margin-bottom: 0.625rem;
+    width: 100%;
+  }
+
+  .sectionVideo {
+    height: auto;
+  }
+  .sectionVideo .content {
+    flex-direction: column;
+  }
+  .sectionVideo .content .sectionVideo_list {
+    order: 2;
+  }
+  .sectionVideo .sectionVideo_media iframe {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
