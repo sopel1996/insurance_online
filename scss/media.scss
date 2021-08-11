@@ -25,19 +25,19 @@
     } 
 }
 @media (max-width: 900px) {
-    .sectionSearchForm .calculator2019 .fields li label{
+    .sectionSearchForm .calculator2021 .fields li label{
         padding: toRem(10);
         &::before{
             left: toRem(17);
         }
     }
-    .sectionSearchForm .calculator2019 .fields li label span.title,
-    .sectionSearchForm .calculator2019 .fields li label select,
-    .sectionSearchForm .calculator2019 .fields li label input{
+    .sectionSearchForm .calculator2021 .fields li label span.title,
+    .sectionSearchForm .calculator2021 .fields li label select,
+    .sectionSearchForm .calculator2021 .fields li label input{
         font-size: toRem(15);
     }
 
-    .sectionSearchForm .calculator2019 .fields li{
+    .sectionSearchForm .calculator2021 .fields li{
         .lastInput{
             width: 100%;
         }
@@ -82,75 +82,354 @@
         } 
     }
 }
+
 @media (max-width: 768px) {
-    .sectionSearchForm .calculator2019 .fields li label{
-        padding: toRem(10);
-        &::before{
-            left: toRem(17);
-        }
+    .sectionInner{
+        padding: 0 toRem(20);
     }
-    .sectionSearchForm .calculator2019 .fields li label span.title,
-    .sectionSearchForm .calculator2019 .fields li label select,
-    .sectionSearchForm .calculator2019 .fields li label input{
-        font-size: toRem(15);
-    }
-    .sectionFooter{
-        .sectionFooter_firstLine{
-            .footerImg{
-                width: 100%;
-                height: auto;
-            }
-        }
-    }
-}
-@media (max-width: 700px) {
-    .sectionSearchForm {
-        .calculator2019 .fields li{
-            flex-direction: column;
-            .lastInput{
-                width: 100%;
-            }
-            & label{
-                width: 100%;
-                & select{
-                    width: 100%;
+
+
+    .sectionAccordeon{
+
+
+        .accordeon{
+            
+            &Item{
+                
+                &_trigger{
+                    
+                    @include AlmoniBold(18);
+
+                    padding-left: toRem(50);
+                    
+                }
+                &_content{
+                    @include AlmoniRegular(16);
+
                 }
             }
         }
-        .t-datepicker{
-            flex-direction: column;
-            
+    }
+
+    .sectionFirstTable{
+        #relative{
+            overflow-x: scroll;
         }
-        .t-check-in,
-        .t-check-out{
-            margin-bottom: toRem(10);
+        #wrapper{
+            margin-right:toRem(130);    
+        }
+       
+        .firstTable{
+            
+            th{
+                width: toRem(150);
+                height: toRem(150);
+                position: absolute;
+                right: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #fff;
+                padding: 5px;
+            }
+            td{
+                min-width: toRem(100);
+                height: toRem(150);
+                padding: 5px;
+            }
+        }
+    }
+
+
+    .sectionFooter{
+        
+        .sectionFooter_firstLine{
+            
+            .footerImg{
+                width: 100%;
+                height: auto
+            }
+            .footerText{
+                @include AlmoniRegular(14);
+    
+            }
+        }
+        .sectionFooter_secondLine{
+            flex-direction: column;
+            .realmediaLogo{
+                order: 1;
+                margin-bottom: toRem(15);
+            }
+            .copyright{
+                order:2;
+                @include AlmoniRegular(14);
+            }
+        }
+    }
+
+    .sectionSearchForm{
+
+        background-size: cover;
+        background-position: 50% 50%;
+          .calculator2021 .fields li {
+            flex-direction: column;
+          }
+          
+          .calculator2021 .fields li .lastInput{
             width: 100%;
+        }
+          .calculator2021 .fields li label {
+              width: 100%;
+              padding-left: 20px;
+              padding-right: 20px;
+            }
+    
+           
+          .calculator2021 .fields li label span.title {
+              @include AlmoniBold(14);
+            }
+          .calculator2021 .fields li label select,
+          .calculator2021 .fields li label input {
+              @include AlmoniRegular(14);
+          }
+          
+          .calculator2021 .fields li label:before {
+              left: toRem(35);
+          }
+                    .calculator2021 .results {
+              display: none;
+              margin: 0 0 20px 0;
+          }
+          
+          /* New Picker */
+          
+          .t-datepicker {
+              flex-direction: column;
+          }
+          
+          .t-check-in, .t-check-out, .t-datepicker {
+              margin-bottom: 10px;
+              width: 100%
+          }
+          
+          .t-check-in, .t-check-out {
+              
+              width: 100%;
+                display: flex;
+                align-items: center;
+          }
+          
+    }
+
+    .sectionSecondTable{
+        #relative{
+    
+            overflow-x: scroll;
+        }
+        #wrapper{
+            margin-right:toRem(130);    
+        }
+        
+        .secondTable{
+           
+            th{
+                width: toRem(150);
+                height: toRem(200);
+                position: absolute;
+                right: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #fff;
+                padding: 5px;
+            }
+            td{
+                min-width: toRem(150);
+                height: toRem(200);
+                padding: 5px;
+            }
         }
     }
     .sectionVideo{
-        height: auto;
+        height: 100%;
         .content{
             flex-direction: column;
-            .sectionVideo_list{
-                order: 2;
+        }
+        .sectionVideo_list{
+            order: 2;
+            .list{
+                @include AlmoniRegular(18);
+            }
+            .textBetweenLists{
+                @include AlmoniBold(22);
             }
         }
-        // .sectionVideo_list{
-        //     .textBetweenLists{
-        //         font-size: toRem(16);
-        //     }
-        //     .list{
-        //         font-size: toRem(15);
-        //     }
-        // }
         .sectionVideo_media{
+            order: 1;
             iframe{
                 margin-top: 20px;
                 margin-bottom: 20px;
-                // width: toRem(395);
-                // height: toRem(275);
+            width: toRem(540);
+            height: toRem(350);
+            }   
+        }
+    }
+}
+@media (max-width: 576px) {
+    .sectionVideo{
+        .title{
+            font-size: toRem(28);
+            
+        }
+        .sectionVideo_list{
+            .list{
+                font-size: toRem(20);
             }
-        } 
+            .textBetweenLists{
+                font-size: toRem(22);
+            }
+        }
+        .sectionVideo_media{
+            width: 100%;
+            iframe{
+                width: 100%;
+                height: toRem(250);
+            }   
+        }
+    }
+    
+    .sectionFooter{
+        .sectionFooter_firstLine{
+            .footerImg{
+                width: 90%;
+            }
+            
+        }
+    }
+    
+}
+
+@media (max-width: 360px) {
+    .sectionSearchForm{
+        &_Logo{
+            width: toRem(265);
+            height: toRem(93);
+        }
+        &_title{
+            font-size: toRem(42);
+        }
+        &_subtitle{
+            font-size: toRem(32);
+            
+        }
+        &_text{
+            font-size: toRem(22);
+            
+        }
+        &_form{
+            font-size: toRem(20);
+            .firstLineForm,
+            .secondLineForm{
+
+                padding: 0;
+            }
+            .checkboxSport{
+                width: toRem(20);
+                height: toRem(20);
+                padding: 0;
+            }
+            .destination,
+            .departure,
+            .arrival{
+                // width: toRem(320);
+                width: 100%;
+            }
+            
+            &-personalInformation{
+                
+                .personalInformationMain{
+                    label{
+                        margin-top: toRem(10);
+                    }
+                    .container{
+                        width: 100%;
+                        select,
+                        input{
+                            // width: toRem(290);
+                            width: 100%;
+                        }
+                        #lastSelect{
+                            width: 100%;
+                            // width: toRem(290);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .sectionVideo{
+
+        
+        .title{
+            font-size: toRem(28);
+    
+        }
+        .sectionVideo_list{
+    
+            .list{
+                font-size: toRem(16);
+            }
+            .textBetweenLists{
+                font-size: toRem(22);
+            }
+        }
+        .sectionVideo_media{
+            iframe{
+            width: toRem(290);
+            height: toRem(200);
+            }   
+        }
+    }
+
+
+    .sectionAccordeon{  
+        .title{
+            font-size: toRem(22);
+        }
+        .subtitle{
+            font-size: toRem(18);
+        }
+        .accordeonTitle{
+            font-size: toRem(28);
+        }
+    
+        .accordeon{
+            &Item{
+                &_trigger{
+                    font-size: toRem(16);
+                }
+                &_content{
+                    font-size: toRem(14);
+                }
+            }
+        }
+    }
+
+    .sectionFooter{
+        .sectionFooter_firstLine{
+            
+            
+            .footerText{
+                font-size: toRem(16);
+            }
+        }
+        .sectionFooter_secondLine{
+            .copyright{
+                font-Size: toRem(18);
+            }
+        }
+        
     }
 
 }

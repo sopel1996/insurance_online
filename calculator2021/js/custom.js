@@ -94,7 +94,7 @@ jQuery(document).ready(function () {
 		// Load JSON file with all insurance data
 		// ------------------------------------
 
-		$.getJSON('/calculator2019/js/data.json', function (json) {
+		$.getJSON('/calculator2021/js/data.json', function (json) {
 			data = json;
 			console.log(data);
 		});
@@ -898,7 +898,7 @@ jQuery(document).ready(function () {
 			var ul = '';
 
 			ul += '<ul>';
-			$('.calculator2019 .tablewrap table tr').each(function () {
+			$('.calculator2021 .tablewrap table tr').each(function () {
 				var $elm = $(this).find('th:first-child, td:first-child');
 				var height = $elm.outerHeight();
 
@@ -906,7 +906,7 @@ jQuery(document).ready(function () {
 			});
 			ul += '<ul>';
 
-			$('.calculator2019 .tablewrap table').parent().parent().prepend(ul);
+			$('.calculator2021 .tablewrap table').parent().parent().prepend(ul);
 		}
 
 		// ------------------------------------
@@ -930,7 +930,7 @@ jQuery(document).ready(function () {
 				if (prop == false) {
 					$('.' + name).css('display', 'none');
 				} else {
-					$('.' + name).css('display', 'block');
+					$('.' + name).css('display', 'flex');
 				}
 			});
 		}

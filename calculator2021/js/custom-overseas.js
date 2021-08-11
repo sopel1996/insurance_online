@@ -5,77 +5,33 @@ jQuery(document).ready(function () {
 		// Set Global Vars
 		// ------------------------------------
 
-		var today = new Date();
-		var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
-		var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-		var dateTime = date + ' ' + time;
-		console.log(dateTime);
-
 		var data = {};
 		var days = 0;
 		var daysEtgari = 0;
-
-		$('.t-datepicker-etgari').tDatePicker({
-			iconDate: '',
-			titleCheckIn: 'תאריך התחלה',
-			titleCheckOut: 'תאריך סיום',
-			titleToday: 'היום',
-			titleDateRange: 'יום',
-			titleDateRanges: 'ימים',
-			titleDays: ['א', 'ב', 'ג', 'ד', 'ה', 'ו', 'ש׳'],
-			titleMonths: ['ינואר', 'פברואר', 'מרץ', 'אפריל', 'מאי', 'יוני', 'יולי', 'אוגוסט', 'ספטמבר', 'אוקטובר', 'נובמבר', "דצמבר"],
-			daysOfWeekHighlighted: [],
-			showFullDateRanges: true,
-			limitDateRanges: 365,
-			toDayHighlighted: false,
-			titleMonthsLimitShow: 20,
-		});
-
-		$('.t-datepicker-ski').tDatePicker({
-			iconDate: '',
-			titleCheckIn: 'תאריך התחלה',
-			titleCheckOut: 'תאריך סיום',
-			titleToday: 'היום',
-			titleDateRange: 'יום',
-			titleDateRanges: 'ימים',
-			titleDays: ['א', 'ב', 'ג', 'ד', 'ה', 'ו', 'ש׳'],
-			titleMonths: ['ינואר', 'פברואר', 'מרץ', 'אפריל', 'מאי', 'יוני', 'יולי', 'אוגוסט', 'ספטמבר', 'אוקטובר', 'נובמבר', "דצמבר"],
-			daysOfWeekHighlighted: [],
-			showFullDateRanges: true,
-			limitDateRanges: 365,
-			toDayHighlighted: false,
-			titleMonthsLimitShow: 20,
-		});
-
-		$('.t-datepicker-flight').tDatePicker({
-			iconDate: '',
-			titleCheckIn: 'בחר תאריך יציאה',
-			titleCheckOut: 'בחר תאריך חזרה',
-			titleToday: 'היום',
-			titleDateRange: 'יום',
-			titleDateRanges: 'ימים',
-			titleDays: ['א', 'ב', 'ג', 'ד', 'ה', 'ו', 'ש׳'],
-			titleMonths: ['ינואר', 'פברואר', 'מרץ', 'אפריל', 'מאי', 'יוני', 'יולי', 'אוגוסט', 'ספטמבר', 'אוקטובר', 'נובמבר', "דצמבר"],
-			daysOfWeekHighlighted: [],
-			showFullDateRanges: true,
-			limitDateRanges: 365,
-			toDayHighlighted: false,
-			titleMonthsLimitShow: 20,
+		$('.dates input[type="text"]').datepicker({
+			dateFormat: "dd/mm/yy",
+			minDate: 0
 		})
-			.on('eventClickDay', function () {
-				$('.t-datepicker-etgari').tDatePicker('setStartDate', $('.t-datepicker-flight').tDatePicker('getDateInputs')[0]);
-				$('.t-datepicker-etgari').tDatePicker('setEndDate', $('.t-datepicker-flight').tDatePicker('getDateInputs')[1]);
+			.on('change', function () {
+				name = $(this).attr('name');
+				val = $(this).datepicker('getDate');
 
-				$('.t-datepicker-ski').tDatePicker('setStartDate', $('.t-datepicker-flight').tDatePicker('getDateInputs')[0]);
-				$('.t-datepicker-ski').tDatePicker('setEndDate', $('.t-datepicker-flight').tDatePicker('getDateInputs')[1]);
+				if (name == 'date-flight') {
+					$('.dates input[name="etgari-start"], .dates input[name="ski-start"]').datepicker('option', 'minDate', val);
+					$('.dates input[name="etgari-start"], .dates input[name="ski-start"]').datepicker('setDate', val);
+				}
+
+				if (name == 'date-back') {
+					$('.dates input[name="etgari-end"], .dates input[name="ski-end"]').datepicker('option', 'maxDate', val);
+					$('.dates input[name="etgari-end"], .dates input[name="ski-end"]').datepicker('setDate', val);
+				}
 			});
-
 
 		// ------------------------------------
 		// Load JSON file with all insurance data
 		// ------------------------------------
 
-		$.getJSON('/calculator2019/js/data.json', function (json) {
+		$.getJSON('/calculator2021/js/data.json', function (json) {
 			data = json;
 		});
 
@@ -121,15 +77,14 @@ jQuery(document).ready(function () {
 			if (checkAges()) {
 				var table = '';
 
-				var dateFlight = $('.t-datepicker-flight').tDatePicker('getDates')[0];
-				var dateBack = $('.t-datepicker-flight').tDatePicker('getDates')[1];
+				var dateFlight = $('input[name="date-flight"]').datepicker('getDate');
+				var dateBack = $('input[name="date-back"]').datepicker('getDate');
 
-				var etgariStart = $('.t-datepicker-etgari').tDatePicker('getDates')[0];
-				var etgariEnd = $('.t-datepicker-etgari').tDatePicker('getDates')[1];
+				var etgariStart = $('input[name="etgari-start"]').datepicker('getDate');
+				var etgariEnd = $('input[name="etgari-end"]').datepicker('getDate');
 
-				var skiStart = $('.t-datepicker-ski').tDatePicker('getDates')[0];
-				var skiEnd = $('.t-datepicker-ski').tDatePicker('getDates')[1];
-
+				var skiStart = $('input[name="ski-start"]').datepicker('getDate');
+				var skiEnd = $('input[name="ski-end"]').datepicker('getDate');
 
 				// Reset for total calculation
 				var total = {
@@ -161,7 +116,7 @@ jQuery(document).ready(function () {
 				table += '<tr>';
 				table += '<th>חברה</th>';
 				table += '<th><img src="img/svg/harel.svg" alt="" /></th>';
-				table += '<th><img src="calculator2019/images/harelusa.png" alt="" /></th>';
+				table += '<th><img src="calculator2021/images/harelusa.png" alt="" /></th>';
 				table += '<th><img src="img/svg/migdal.svg" alt="" /></th>';
 				table += '<th><img src="img/svg/fenix.svg" alt="" /></th>';
 				table += '<th><img src="img/svg/passportcard.svg" alt="" /></th>';
@@ -185,11 +140,11 @@ jQuery(document).ready(function () {
 
 						if (price == 0 || price == false) {
 							price = '--';
-						} else {
+						}
+						else {
 							total[company] += price;
 							price = roundNum(price) + '$';
 						}
-
 						table += '<td>';
 						table += price;
 						table += '</td>';
@@ -210,7 +165,6 @@ jQuery(document).ready(function () {
 				scrollTables();
 			}
 		});
-
 		// ------------------------------------
 		// Calculate Basic Price
 		// ------------------------------------
@@ -321,7 +275,29 @@ jQuery(document).ready(function () {
 				return 0;
 			}
 		}
+		var calculateHarel = function (company, age, days) {
+			var price = 0;
 
+			if (typeof data[company]['harel'] !== 'undefined') {
+				$.each(data[company]['harel'], function (k, v) {
+					if (eval(age + k)) {
+						price = v;
+						return false;
+					}
+				});
+
+				if (price > 0 && age <= 60 && days <= 30) {
+					console.log('%c---- harel Price In "' + company + '" For ' + days + ' Days: ' + price * days + '$ (Price per day: ' + price + ')', 'color: gray');
+					return price * days;
+				} else {
+					console.log('%c---- No harel Price Found/30 Days Limit Returned FALSE', 'color: gray');
+					return false;
+				}
+			} else {
+				console.log('%c---- No harel Price found in "' + company + '"', 'color: gray');
+				return 0;
+			}
+		}
 		// ------------------------------------
 		// Calculate Flight Cancle Price
 		// ------------------------------------
@@ -492,10 +468,31 @@ jQuery(document).ready(function () {
 		// ------------------------------------
 		// Check all fields
 		// ------------------------------------
+		/*
+			var checkFieldsGetPrice = function($this, company, personAge, days, daysEtgari, daysSki) {
+				var priceTemp = 0;
+				var medical = $this.find('select[name="medical"]').val();
+				var gimel = $this.find('select[name="gimel"]').val();
+				var rescue = $this.find('select[name="rescue"]').val();
+				var luggage = $this.find('select[name="luggage"]').val();
+				var flightcancle = $this.find('select[name="flightcancle"]').val();
+				var pregnant = $this.find('select[name="pregnant"]').val();
+				var phone = $this.find('select[name="phone"]').val();
+				var laptop = $this.find('select[name="laptop"]').val();
+				var etgari = $('input[name="etgari"]').prop('checked');
+				var ski = $('input[name="ski"]').prop('checked');
+		
+				var price = calculateBasic(company, personAge, days);
+		
+				if(!price) {
+					return false;
+				}
+				*/
 
 		var checkFieldsGetPrice = function ($this, company, personAge, days, daysEtgari, daysSki) {
 			var priceTemp = 0;
 			var medical = $this.find('select[name="medical"]').val();
+			var accidents = $this.find('select[name="accidents"]').val();
 			var gimel = $this.find('select[name="gimel"]').val();
 			var rescue = $this.find('select[name="rescue"]').val();
 			var luggage = $this.find('select[name="luggage"]').val();
@@ -503,15 +500,70 @@ jQuery(document).ready(function () {
 			var pregnant = $this.find('select[name="pregnant"]').val();
 			var phone = $this.find('select[name="phone"]').val();
 			var laptop = $this.find('select[name="laptop"]').val();
-			var etgari = $('input[name="t-datepicker-etgari"]').prop('checked');
-			var ski = $('input[name="t-datepicker-ski"]').prop('checked');
-
+			var etgari = $('input[name="etgari"]').prop('checked');
+			var ski = $('input[name="ski"]').prop('checked');
 			var price = calculateBasic(company, personAge, days);
 
+			if (company == 'harel' && personAge > 60 && days > 45) {
+				price = 0;
+			}
+			if (company == 'harel' && personAge > 70 && days > 30) {
+				price = 0;
+			}
+			if (company == 'harel' && personAge > 75 && days > 15) {
+				price = 0;
+			}
+			if (company == 'harel' && personAge > 85 && days > 10) {
+				price = 0;
+			}
+			if (company == 'harel' && personAge > 90 && days > 10) {
+				price = 0;
+			}
+			if (company == 'harel' && personAge > 95 && days > 7) {
+				price = 0;
+			}
+			if (company == 'harel' && personAge > 80 && days > 15) {
+				price = 0;
+			}
+			if (company == 'fenix' && personAge > 75 && days > 15) {
+				price = 0;
+			}
+			if (company == 'fenix' && personAge > 60 && days > 60) {
+				price = 0;
+			}
+			if (company == 'fenix' && personAge > 66 && days > 30) {
+				price = 0;
+			}
+			if (company == 'fenix' && personAge > 70 && days > 15) {
+				price = 0;
+			}
+			if (company == 'fenix' && personAge > 90 && days > 10) {
+				price = 0;
+			}
+			if (company == 'passportcard' && personAge > 85 && days > 10) {
+				price = 0;
+			}
+			if (company == 'passportcard' && personAge > 75 && days > 15) {
+				price = 0;
+			}
+			if (company == 'passportcard' && personAge > 70 && days > 30) {
+				price = 0;
+			}
+			if (company == 'passportcard' && personAge > 60 && days > 30) {
+				price = 0;
+			}
+			if (company == 'harelusa' && personAge > 0) {
+				price = NaN;
+			}
+			if (company == 'menora' && personAge > 0) {
+				price = NaN;
+			}
+			if (company == 'clal' && personAge <= 70 && days > 30) {
+				price = 0;
+			}
 			if (!price) {
 				return false;
 			}
-
 			if (medical == 1) {
 				priceTemp = calculateMedical(company, personAge, days);
 
@@ -537,7 +589,6 @@ jQuery(document).ready(function () {
 			if (flightcancle == 1) {
 				price += calculateFlightCancle(company, personAge, days);
 			}
-
 			if (pregnant == 1) {
 				priceTemp = calculatePregnant(company, personAge, days);
 
@@ -602,7 +653,7 @@ jQuery(document).ready(function () {
 			var ul = '';
 
 			ul += '<ul>';
-			$('.calculator2019 .tablewrap table tr').each(function () {
+			$('.calculator2021 .tablewrap table tr').each(function () {
 				var $elm = $(this).find('th:first-child, td:first-child');
 				var height = $elm.outerHeight();
 
@@ -610,7 +661,7 @@ jQuery(document).ready(function () {
 			});
 			ul += '<ul>';
 
-			$('.calculator2019 .tablewrap table').parent().parent().prepend(ul);
+			$('.calculator2021 .tablewrap table').parent().parent().prepend(ul);
 		}
 
 		// ------------------------------------
@@ -632,9 +683,9 @@ jQuery(document).ready(function () {
 				var prop = $(this).prop('checked');
 
 				if (prop == false) {
-					$('.' + name).css('display', 'none');
+					$('.dates label.' + name).css('display', 'none');
 				} else {
-					$('.' + name).css('display', 'block');
+					$('.dates label.' + name).css('display', 'block');
 				}
 			});
 		}
@@ -673,4 +724,4 @@ jQuery(document).ready(function () {
 
 	})(jQuery);
 });
-// JavaScript Document
+

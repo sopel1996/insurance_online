@@ -3,8 +3,8 @@
 
     min-height: toRem(1165);
     width: 100%;
-    background: url(/img/png/sectionSearchBg.jpg) 50% 50% no-repeat;
-    background-size: cover;
+    background: url(/img/png/sectionSearchBg.jpg) 0 0 no-repeat;
+    background-size: contain;
     position: relative;
     overflow: hidden;
     &::before {
@@ -15,8 +15,6 @@
         right: 0;
         left: 0;
         bottom: 0;
-        background: rgb(198,198,198);
-        background: linear-gradient(180deg, rgba(198,198,198,0.6) 0%, rgba(255,255,255,0.9) 60%, rgba(255,255,255,1) 100%);
     }
 
     .sectionInner{
@@ -185,11 +183,11 @@
     // }
 
     
-      .calculator2019 a:link, .calculator2019  a:visited,.calculator2019  a:hover {
+      .calculator2021 a:link, .calculator2021  a:visited,.calculator2021  a:hover {
           color: #000;
           text-decoration: none;
         }
-    .calculator2019 a img {
+    .calculator2021 a img {
         display: block;
         margin: 0 auto;
         width: 100%;
@@ -197,9 +195,9 @@
         
       
       .buy a p{direction: rtl}
-      .calculator2019 input[type="text"],
-      .calculator2019 input[type="number"],
-      .calculator2019 select {
+      .calculator2021 input[type="text"],
+      .calculator2021 input[type="number"],
+      .calculator2021 select {
           border: 1px #ececec solid;
           border-radius: 3px;
           background: #fff;
@@ -212,45 +210,45 @@
           -webkit-appearance: none;
       }
       
-      .calculator2019 .dates {
+      .calculator2021 .dates {
           display: flex;
           flex-wrap: wrap;
       }
       
-      .calculator2019 .dates label {
+      .calculator2021 .dates label {
           width: toRem(200);
           padding: toRem(5) 0 toRem(5) 0;
       }
       
-      .calculator2019 .dates label span.title {
+      .calculator2021 .dates label span.title {
           display: block;
           @include AlmoniRegular(18);
           margin-right: toRem(10);
           color: #00549B;
       }
       
-      .calculator2019 .dates label input[type="text"] {
+      .calculator2021 .dates label input[type="text"] {
           width: 100%;
       }
       
-      .calculator2019 .dates label.checkbox {
+      .calculator2021 .dates label.checkbox {
           width: 100%;
           display: flex;
       }
       
-      .calculator2019 .dates label.etgari,
-      .calculator2019 .dates label.ski {
+      .calculator2021 .dates label.etgari,
+      .calculator2021 .dates label.ski {
           display: none;
       }
       
-      .calculator2019 .fields {
+      .calculator2021 .fields {
           margin: 0 0 toRem(20) 0;
           padding: 0;
           box-shadow: 0 5px 20px rgba(0, 0, 0, 0.199);
       }
 
       
-      .calculator2019 .fields li {
+      .calculator2021 .fields li {
           display: flex;
           flex-wrap: wrap;
           margin: 15px 0 0 0;
@@ -259,7 +257,7 @@
         min-height: toRem(264);
       }
       
-      .calculator2019 .fields li .num {
+      .calculator2021 .fields li .num {
         
         height: toRem(57);
                 background-color: #00549B;
@@ -272,7 +270,7 @@
                 width: 100%;
       }
       
-      .calculator2019 .fields li .num a {
+      .calculator2021 .fields li .num a {
           width: toRem(15);
           height: toRem(15);
           display: flex;
@@ -288,52 +286,54 @@
           position: relative;
       }
       
-      .calculator2019 .fields li .lastInput{
+      .calculator2021 .fields li .lastInput{
         width: toRem(667);
     }
-      .calculator2019 .fields li label {
+      .calculator2021 .fields li label {
           width: 20%;
           padding: toRem(5);
           position: relative;
           padding: toRem(20);
+          padding-left: toRem(10);
+          padding-right: toRem(10);
           .lastInput{
               width: toRem(667);
           }
         }
 
       
-      .calculator2019 .fields li label span.title {
+      .calculator2021 .fields li label span.title {
           display: block;
           color: #5A5A5A;
           @include AlmoniBold(20);
         }
         
-        .calculator2019 .fields li label div.error {
+        .calculator2021 .fields li label div.error {
           @include AlmoniRegular(10);
           color: red;
       }
       
-      .calculator2019 .fields li label select,
-      .calculator2019 .fields li label input {
+      .calculator2021 .fields li label select,
+      .calculator2021 .fields li label input {
           width: 100%;
           @include AlmoniRegular(20);
           color: #888888;
           height: toRem(40);
       }
       
-      .calculator2019 .fields li label:before {
+      .calculator2021 .fields li label:before {
           content: "\25BE";
           position: absolute;
           font-size: toRem(12);
-          left: toRem(35);
+          left: toRem(25);
           top: calc(50% + 5px);
       }
       
-      .calculator2019 .fields li label.age:before {
+      .calculator2021 .fields li label.age:before {
           display: none;
       }
       
-      .calculator2019 #addperson {
+      .calculator2021 #addperson {
           cursor: pointer;
         height: toRem(57);
                 background-color: #EEEEEE;
@@ -347,13 +347,13 @@
                 border: none;
       }
       
-      .calculator2019 #addperson:hover {
+      .calculator2021 #addperson:hover {
           color: #fff;
           background: #069;
           border-color: #069;
       }
       
-      .calculator2019 #calculate {
+      .calculator2021 #calculate {
         display: block;
         margin: toRem(40) auto 0;
         height: toRem(50);
@@ -366,7 +366,7 @@
         cursor: pointer;
       }
       
-      .calculator2019 .results {
+      .calculator2021 .results {
           display: none;
           margin: 0 0 20px 0;
       }
@@ -476,7 +476,7 @@
           display: none;
       }
       
-      .calculator2019 .tablewrap ul {
+      .calculator2021 .tablewrap ul {
           display: none;
       }
 
