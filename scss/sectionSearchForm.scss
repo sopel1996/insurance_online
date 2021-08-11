@@ -253,8 +253,8 @@
           flex-wrap: wrap;
           margin: 15px 0 0 0;
           background: #fafafa;
-          border-radius: 3px;
-        min-height: toRem(264);
+        //   border-radius: 3px;
+        // min-height: toRem(264);
       }
       
       .calculator2021 .fields li .num {
@@ -266,8 +266,10 @@
                 align-items: center;
                 justify-content: flex-start;
                 padding-right: toRem(20);
-                @include AlmoniBold(32);
-                width: 100%;
+                @include AlmoniBold(28);
+                width: calc(100% + 20px);
+                margin: -10px;
+                margin-bottom: 0;
       }
       
       .calculator2021 .fields li .num a {
@@ -287,15 +289,12 @@
       }
       
       .calculator2021 .fields li .lastInput{
-        width: toRem(667);
+        width: 100%;
     }
       .calculator2021 .fields li label {
           width: 20%;
-          padding: toRem(5);
           position: relative;
-          padding: toRem(5);
-          padding-left: toRem(10);
-          padding-right: toRem(10);
+          padding: toRem(10);
           .lastInput{
               width: toRem(667);
           }
@@ -306,6 +305,7 @@
           display: block;
           color: #5A5A5A;
           @include AlmoniBold(20);
+          margin: 0 0 5px 0;
         }
         
         .calculator2021 .fields li label div.error {

@@ -220,8 +220,6 @@ input {
       flex-wrap: wrap;
   margin: 15px 0 0 0;
   background: #fafafa;
-  border-radius: 3px;
-  min-height: 264px;
 }
 
 .sectionSearchForm .calculator2021 .fields li .num {
@@ -240,8 +238,10 @@ input {
   padding-right: 20px;
   font-family: "almoni",sans-serif;
   font-weight: 700;
-  font-size: 32px;
-  width: 100%;
+  font-size: 28px;
+  width: calc(100% + 20px);
+  margin: -10px;
+  margin-bottom: 0;
 }
 
 .sectionSearchForm .calculator2021 .fields li .num a {
@@ -270,16 +270,13 @@ input {
 }
 
 .sectionSearchForm .calculator2021 .fields li .lastInput {
-  width: 667px;
+  width: 100%;
 }
 
 .sectionSearchForm .calculator2021 .fields li label {
   width: 20%;
-  padding: 5px;
   position: relative;
-  padding: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 10px;
 }
 
 .sectionSearchForm .calculator2021 .fields li label .lastInput {
@@ -292,6 +289,7 @@ input {
   font-family: "almoni",sans-serif;
   font-weight: 700;
   font-size: 20px;
+  margin: 0 0 5px 0;
 }
 
 .sectionSearchForm .calculator2021 .fields li label div.error {
