@@ -390,7 +390,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sectionInner {
-  max-width: 73.125rem;
+  max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
   height: 100%;
@@ -419,7 +419,7 @@ input {
 }
 
 .sectionSearchForm {
-  min-height: 72.8125rem;
+  min-height: 1165px;
   width: 100%;
   background: url(/img/png/sectionSearchBg.jpg) 50% 50% no-repeat;
   background-size: cover;
@@ -444,14 +444,14 @@ input {
 .sectionSearchForm .sectionInner {
   position: relative;
   z-index: 10;
-  padding-top: 3.75rem;
+  padding-top: 60px;
 }
 
 .sectionSearchForm_Logo {
-  width: 18.4375rem;
-  height: 5.8125rem;
+  width: 295px;
+  height: 93px;
   margin: 0 auto;
-  margin-bottom: 3.75rem;
+  margin-bottom: 60px;
   background: url(/img/svg/Logo.svg) 50% 50% no-repeat;
   background-size: cover;
 }
@@ -459,28 +459,28 @@ input {
 .sectionSearchForm_title {
   font-family: "almoni",sans-serif;
   font-weight: 900;
-  font-size: 2.625rem;
+  font-size: 42px;
   color: #00549B;
   text-align: center;
-  margin-bottom: 1.25rem;
+  margin-bottom: 20px;
 }
 
 .sectionSearchForm_subtitle {
   font-family: "almoni",sans-serif;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 32px;
   color: #000;
   text-align: center;
-  margin-bottom: 1.25rem;
+  margin-bottom: 20px;
 }
 
 .sectionSearchForm_text {
   font-family: "almoni",sans-serif;
   font-weight: 500;
-  font-size: 1.375rem;
+  font-size: 22px;
   color: #000;
   text-align: center;
-  margin-bottom: 1.25rem;
+  margin-bottom: 20px;
 }
 
 .sectionSearchForm .calculator2019 a:link, .sectionSearchForm .calculator2019 a:visited, .sectionSearchForm .calculator2019 a:hover {
@@ -522,16 +522,16 @@ input {
 }
 
 .sectionSearchForm .calculator2019 .dates label {
-  width: 12.5rem;
-  padding: 0.3125rem 0 0.3125rem 0;
+  width: 200px;
+  padding: 5px 0 5px 0;
 }
 
 .sectionSearchForm .calculator2019 .dates label span.title {
   display: block;
   font-family: "almoni",sans-serif;
   font-weight: 500;
-  font-size: 1.125rem;
-  margin-right: 0.625rem;
+  font-size: 18px;
+  margin-right: 10px;
   color: #00549B;
 }
 
@@ -552,7 +552,7 @@ input {
 }
 
 .sectionSearchForm .calculator2019 .fields {
-  margin: 0 0 1.25rem 0;
+  margin: 0 0 20px 0;
   padding: 0;
   -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.199);
           box-shadow: 0 5px 20px rgba(0, 0, 0, 0.199);
@@ -567,11 +567,11 @@ input {
   margin: 15px 0 0 0;
   background: #fafafa;
   border-radius: 3px;
-  min-height: 16.5rem;
+  min-height: 264px;
 }
 
 .sectionSearchForm .calculator2019 .fields li .num {
-  height: 3.5625rem;
+  height: 57px;
   background-color: #00549B;
   color: #fff;
   display: -webkit-box;
@@ -583,16 +583,16 @@ input {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding-right: 1.25rem;
+  padding-right: 20px;
   font-family: "almoni",sans-serif;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 32px;
   width: 100%;
 }
 
 .sectionSearchForm .calculator2019 .fields li .num a {
-  width: 0.9375rem;
-  height: 0.9375rem;
+  width: 15px;
+  height: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -608,26 +608,26 @@ input {
           justify-content: center;
   border-radius: 50%;
   background: #ef1616;
-  font-size: 0.9375rem;
-  line-height: 0.9375rem;
-  margin: 0 0 0 0.3125rem;
+  font-size: 15px;
+  line-height: 15px;
+  margin: 0 0 0 5px;
   color: #fff;
   position: relative;
 }
 
 .sectionSearchForm .calculator2019 .fields li .lastInput {
-  width: 41.6875rem;
+  width: 667px;
 }
 
 .sectionSearchForm .calculator2019 .fields li label {
   width: 20%;
-  padding: 0.3125rem;
+  padding: 5px;
   position: relative;
-  padding: 1.25rem;
+  padding: 20px;
 }
 
 .sectionSearchForm .calculator2019 .fields li label .lastInput {
-  width: 41.6875rem;
+  width: 667px;
 }
 
 .sectionSearchForm .calculator2019 .fields li label span.title {
@@ -635,13 +635,13 @@ input {
   color: #5A5A5A;
   font-family: "almoni",sans-serif;
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 20px;
 }
 
 .sectionSearchForm .calculator2019 .fields li label div.error {
   font-family: "almoni",sans-serif;
   font-weight: 500;
-  font-size: 0.625rem;
+  font-size: 10px;
   color: red;
 }
 
@@ -650,16 +650,16 @@ input {
   width: 100%;
   font-family: "almoni",sans-serif;
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 20px;
   color: #888888;
-  height: 2.5rem;
+  height: 40px;
 }
 
 .sectionSearchForm .calculator2019 .fields li label:before {
   content: "\25BE";
   position: absolute;
-  font-size: 0.75rem;
-  left: 2.1875rem;
+  font-size: 12px;
+  left: 35px;
   top: calc(50% + 5px);
 }
 
@@ -669,7 +669,7 @@ input {
 
 .sectionSearchForm .calculator2019 #addperson {
   cursor: pointer;
-  height: 3.5625rem;
+  height: 57px;
   background-color: #EEEEEE;
   color: #00549B;
   display: -webkit-box;
@@ -681,10 +681,10 @@ input {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding-right: 1.25rem;
+  padding-right: 20px;
   font-family: "almoni",sans-serif;
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 20px;
   width: 100%;
   border: none;
 }
@@ -697,13 +697,13 @@ input {
 
 .sectionSearchForm .calculator2019 #calculate {
   display: block;
-  margin: 2.5rem auto 0;
-  height: 3.125rem;
-  width: 12.75rem;
+  margin: 40px auto 0;
+  height: 50px;
+  width: 204px;
   text-align: center;
   font-family: "almoni",sans-serif;
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 20px;
   color: #fff;
   background-color: #00549B;
   border: none;
@@ -728,13 +728,13 @@ input {
 .sectionSearchForm .t-check-in, .sectionSearchForm .t-check-out {
   font-family: "almoni",sans-serif;
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 20px;
   border: 1px #00549B solid;
   border-radius: 3px;
   padding: 0 10px;
   background-color: #fff;
-  width: 22.8125rem;
-  height: 2.5rem;
+  width: 365px;
+  height: 40px;
   color: #00559bB2;
 }
 
@@ -760,7 +760,7 @@ input {
   position: static;
   font-family: "almoni",sans-serif;
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 20px;
 }
 
 .sectionSearchForm .t-next, .sectionSearchForm .t-prev, .sectionSearchForm .t-table-condensed td, .sectionSearchForm .t-table-condensed th {
@@ -833,15 +833,15 @@ input {
 }
 
 .sectionSearchForm input[type="checkbox"] {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 20px;
+  height: 20px;
 }
 
 .sectionSearchForm .tablewrap-inner {
   font-family: "almoni",sans-serif;
   font-weight: 500;
-  font-size: 1.125rem;
-  margin-top: 1.25rem;
+  font-size: 18px;
+  margin-top: 20px;
 }
 
 .sectionSearchForm .tablewrap-inner table {
@@ -851,13 +851,13 @@ input {
 
 .sectionSearchForm .tablewrap-inner table th, .sectionSearchForm .tablewrap-inner table td {
   border: 1px solid #CCC;
-  height: 3.125rem;
+  height: 50px;
   text-align: center;
   color: #00549B;
 }
 
 .sectionSearchForm .tablewrap-inner table th {
-  width: 12.5rem;
+  width: 200px;
 }
 
 .sectionSearchForm .tablewrap-inner table tr:last-child th, .sectionSearchForm .tablewrap-inner table tr:last-child td {
@@ -866,13 +866,13 @@ input {
 }
 
 .sectionFirstTable {
-  margin-top: 2.5rem;
+  margin-top: 40px;
 }
 
 .sectionFirstTable .firstTable {
   width: 100%;
   border-collapse: collapse;
-  margin-bottom: 1.25rem;
+  margin-bottom: 20px;
 }
 
 .sectionFirstTable .firstTable th, .sectionFirstTable .firstTable td {
@@ -880,22 +880,22 @@ input {
 }
 
 .sectionFirstTable .firstTable th {
-  max-width: 18.3125rem;
-  height: 5.625rem;
+  max-width: 293px;
+  height: 90px;
   color: #00549B;
-  padding-right: 1.25rem;
-  padding-left: 9.375rem;
+  padding-right: 20px;
+  padding-left: 150px;
   font-family: "almoni",sans-serif;
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 20px;
 }
 
 .sectionFirstTable .firstTable td {
   font-family: "almoni",sans-serif;
   font-weight: 500;
-  font-size: 1.25rem;
-  max-width: 7.9375rem;
-  height: 5.625rem;
+  font-size: 20px;
+  max-width: 127px;
+  height: 90px;
   color: #5A5A5A;
   text-align: center;
 }
@@ -909,29 +909,29 @@ input {
 .sectionFirstTable .textAfterTable {
   font-family: "almoni",sans-serif;
   font-weight: 500;
-  font-size: 1.125rem;
+  font-size: 18px;
   color: #5A5A5A;
   text-align: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 40px;
 }
 
 .sectionSecondTable {
-  margin-top: 2.5rem;
+  margin-top: 40px;
 }
 
 .sectionSecondTable .caption {
   font-family: "almoni",sans-serif;
   font-weight: 700;
-  font-size: 1.375rem;
+  font-size: 22px;
   color: #00549B;
   text-align: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 40px;
 }
 
 .sectionSecondTable .secondTable {
   width: 100%;
   border-collapse: collapse;
-  margin-bottom: 1.25rem;
+  margin-bottom: 20px;
 }
 
 .sectionSecondTable .secondTable th, .sectionSecondTable .secondTable td {
@@ -944,22 +944,22 @@ input {
 }
 
 .sectionSecondTable .secondTable th {
-  max-width: 18.3125rem;
-  height: 5.625rem;
+  max-width: 293px;
+  height: 90px;
   color: #00549B;
-  padding-right: 1.25rem;
-  padding-left: 9.375rem;
+  padding-right: 20px;
+  padding-left: 150px;
   font-family: "almoni",sans-serif;
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 20px;
 }
 
 .sectionSecondTable .secondTable td {
   font-family: "almoni",sans-serif;
   font-weight: 500;
-  font-size: 1.25rem;
-  max-width: 7.9375rem;
-  height: 5.625rem;
+  font-size: 20px;
+  max-width: 127px;
+  height: 90px;
   color: #5A5A5A;
   text-align: center;
 }
@@ -973,23 +973,23 @@ input {
 .sectionSecondTable .textAfterTable {
   font-family: "almoni",sans-serif;
   font-weight: 700;
-  font-size: 1.125rem;
+  font-size: 18px;
   color: #00549B;
   text-align: center;
-  margin-bottom: 1.25rem;
+  margin-bottom: 20px;
 }
 
 .sectionSecondTable .markedTextAfterTable {
   font-family: "almoni",sans-serif;
   font-weight: 700;
-  font-size: 0.75rem;
+  font-size: 12px;
   color: #F20D0D;
   text-align: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 40px;
 }
 
 .sectionVideo {
-  height: 40.875rem;
+  height: 654px;
   background: #FAFAFA url(/img/png/sectionVideoBg.png) 50% 50% no-repeat;
   background-size: cover;
   position: relative;
@@ -1040,25 +1040,25 @@ input {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  margin-bottom: 1.5625rem;
+  margin-bottom: 25px;
 }
 
 .sectionVideo .title {
   font-family: "almoni",sans-serif;
   font-weight: 700;
-  font-size: 1.75rem;
+  font-size: 28px;
   color: #00549B;
-  margin-bottom: 0.1875rem;
-  margin-top: 2.5rem;
+  margin-bottom: 3px;
+  margin-top: 40px;
 }
 
 .sectionVideo .sectionVideo_list .list {
   list-style: none;
   font-family: "almoni",sans-serif;
   font-weight: 500;
-  font-size: 1.125rem;
+  font-size: 18px;
   color: #5A5A5A;
-  margin-bottom: 0.625rem;
+  margin-bottom: 10px;
 }
 
 .sectionVideo .sectionVideo_list .list:last-child {
@@ -1068,50 +1068,50 @@ input {
 .sectionVideo .sectionVideo_list .textBetweenLists {
   font-family: "almoni",sans-serif;
   font-weight: 700;
-  font-size: 1.375rem;
+  font-size: 22px;
   color: #00549B;
-  margin-bottom: 0.625rem;
+  margin-bottom: 10px;
 }
 
 .sectionVideo .sectionVideo_media iframe {
-  width: 45.5625rem;
-  height: 32.875rem;
+  width: 729px;
+  height: 526px;
 }
 
 .sectionAccordeon {
-  margin-top: 2.5rem;
+  margin-top: 40px;
 }
 
 .sectionAccordeon .title {
   text-align: center;
   font-family: "almoni",sans-serif;
   font-weight: 700;
-  font-size: 1.375rem;
+  font-size: 22px;
   color: #00549B;
-  margin-bottom: 0.625rem;
+  margin-bottom: 10px;
 }
 
 .sectionAccordeon .subtitle {
   text-align: center;
   font-family: "almoni",sans-serif;
   font-weight: 500;
-  font-size: 1.125rem;
+  font-size: 18px;
   color: #5A5A5A;
-  margin-bottom: 2.5rem;
+  margin-bottom: 40px;
 }
 
 .sectionAccordeon .accordeonTitle {
   text-align: center;
   font-family: "almoni",sans-serif;
   font-weight: 700;
-  font-size: 1.75rem;
+  font-size: 28px;
   color: #00549B;
-  margin-bottom: 1.25rem;
+  margin-bottom: 20px;
 }
 
 .sectionAccordeon .accordeonItem {
   position: relative;
-  margin-bottom: 0.625rem;
+  margin-bottom: 10px;
 }
 
 .sectionAccordeon .accordeonItem_input {
@@ -1135,14 +1135,14 @@ input {
   position: relative;
   font-family: "almoni",sans-serif;
   font-weight: 700;
-  font-size: 1.375rem;
+  font-size: 22px;
   display: block;
-  padding: 0.625rem;
-  padding-left: 9.375rem;
+  padding: 10px;
+  padding-left: 150px;
   background-color: #00549B;
   color: #fff;
   width: 100%;
-  min-height: 2.8125rem;
+  min-height: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1163,14 +1163,14 @@ input {
   color: #fff;
   content: "+";
   position: absolute;
-  left: 1.25rem;
+  left: 20px;
 }
 
 .sectionAccordeon .accordeonItem_content {
   font-family: "almoni",sans-serif;
   font-weight: 500;
-  font-size: 1.25rem;
-  padding: 1.25rem;
+  font-size: 20px;
+  padding: 20px;
   display: none;
   color: #5A5A5A;
   -webkit-box-orient: horizontal;
@@ -1186,7 +1186,7 @@ input {
 }
 
 .sectionFooter {
-  margin: 2.5rem 0;
+  margin: 40px 0;
 }
 
 .sectionFooter .sectionInner {
@@ -1219,14 +1219,14 @@ input {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 1.875rem;
+  margin-bottom: 30px;
   width: 100%;
 }
 
 .sectionFooter .sectionFooter_firstLine .footerImg {
-  margin-bottom: 2.5rem;
-  width: 36.4375rem;
-  height: 5.5rem;
+  margin-bottom: 40px;
+  width: 583px;
+  height: 88px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1234,7 +1234,7 @@ input {
 .sectionFooter .sectionFooter_firstLine .footerText {
   font-family: "almoni",sans-serif;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 16px;
   color: #5A5A5A;
 }
 
@@ -1272,8 +1272,8 @@ input {
 }
 
 .sectionFooter .sectionFooter_secondLine .realmediaLogo .logoImg {
-  width: 5.625rem;
-  height: 1.25rem;
+  width: 90px;
+  height: 20px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1281,7 +1281,7 @@ input {
 .sectionFooter .sectionFooter_secondLine .realmediaLogo .logoText {
   font-family: "almoni",sans-serif;
   font-weight: 300;
-  font-size: 0.9375rem;
+  font-size: 15px;
   color: #00549B;
 }
 
@@ -1289,89 +1289,89 @@ input {
   content: "";
   border: none;
   border-left: 1px solid #00549B;
-  margin: 0 0.625rem;
+  margin: 0 10px;
 }
 
 .sectionFooter .sectionFooter_secondLine .copyright {
   font-family: "almoni",sans-serif;
   font-weight: 500;
-  font-size: 1.125rem;
+  font-size: 18px;
   color: #00549B;
 }
 
 @media (max-width: 1170px) {
   .sectionInner {
-    padding: 0 1.25rem;
+    padding: 0 20px;
   }
   .sectionVideo {
-    height: 40.875rem;
-    padding: 1.25rem 0;
+    height: 654px;
+    padding: 20px 0;
   }
   .sectionVideo .sectionVideo_media iframe {
-    width: 39.375rem;
-    height: 28.125rem;
+    width: 630px;
+    height: 450px;
   }
 }
 
 @media (max-width: 1000px) {
   .sectionVideo .sectionVideo_media iframe {
-    width: 31.25rem;
-    height: 21.875rem;
+    width: 500px;
+    height: 350px;
   }
 }
 
 @media (max-width: 900px) {
   .sectionSearchForm .calculator2019 .fields li label {
-    padding: 0.625rem;
+    padding: 10px;
   }
   .sectionSearchForm .calculator2019 .fields li label::before {
-    left: 1.0625rem;
+    left: 17px;
   }
   .sectionSearchForm .calculator2019 .fields li label span.title,
   .sectionSearchForm .calculator2019 .fields li label select,
   .sectionSearchForm .calculator2019 .fields li label input {
-    font-size: 0.9375rem;
+    font-size: 15px;
   }
   .sectionSearchForm .calculator2019 .fields li .lastInput {
     width: 100%;
   }
   .sectionFirstTable .firstTable th {
-    padding-left: 0.3125rem;
+    padding-left: 5px;
   }
   .sectionFirstTable .firstTable td {
-    padding: 0.3125rem;
-    font-size: 1rem;
+    padding: 5px;
+    font-size: 16px;
   }
   .sectionSecondTable .secondTable th {
-    padding-left: 0.3125rem;
+    padding-left: 5px;
   }
   .sectionSecondTable .secondTable td {
-    padding: 0.3125rem;
-    font-size: 1rem;
+    padding: 5px;
+    font-size: 16px;
   }
   .sectionVideo .sectionVideo_list .textBetweenLists {
-    font-size: 1rem;
+    font-size: 16px;
   }
   .sectionVideo .sectionVideo_list .list {
-    font-size: 0.9375rem;
+    font-size: 15px;
   }
   .sectionVideo .sectionVideo_media iframe {
-    width: 24.6875rem;
-    height: 17.1875rem;
+    width: 395px;
+    height: 275px;
   }
 }
 
 @media (max-width: 768px) {
   .sectionSearchForm .calculator2019 .fields li label {
-    padding: 0.625rem;
+    padding: 10px;
   }
   .sectionSearchForm .calculator2019 .fields li label::before {
-    left: 1.0625rem;
+    left: 17px;
   }
   .sectionSearchForm .calculator2019 .fields li label span.title,
   .sectionSearchForm .calculator2019 .fields li label select,
   .sectionSearchForm .calculator2019 .fields li label input {
-    font-size: 0.9375rem;
+    font-size: 15px;
   }
   .sectionFooter .sectionFooter_firstLine .footerImg {
     width: 100%;
@@ -1403,7 +1403,7 @@ input {
   }
   .sectionSearchForm .t-check-in,
   .sectionSearchForm .t-check-out {
-    margin-bottom: 0.625rem;
+    margin-bottom: 10px;
     width: 100%;
   }
   .sectionVideo {
