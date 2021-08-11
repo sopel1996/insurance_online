@@ -377,9 +377,12 @@ template {
   text-align: right;
 }
 
-a {
+a,
+a:active,
+a:visited {
   outline: none;
   text-decoration: none;
+  color: #0070cc;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -411,11 +414,15 @@ input {
   color: #00549B;
 }
 
+._markedRed {
+  color: #F00D11;
+}
+
 .sectionSearchForm {
   min-height: 72.8125rem;
   width: 100%;
   background: url(/img/png/sectionSearchBg.jpg) 50% 50% no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
   position: relative;
   overflow: hidden;
   /* New Picker */
@@ -430,8 +437,8 @@ input {
   left: 0;
   bottom: 0;
   background: #c6c6c6;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(198, 198, 198, 0.7)), color-stop(60%, white), to(white));
-  background: linear-gradient(180deg, rgba(198, 198, 198, 0.7) 0%, white 60%, white 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(198, 198, 198, 0.6)), color-stop(60%, rgba(255, 255, 255, 0.9)), to(white));
+  background: linear-gradient(180deg, rgba(198, 198, 198, 0.6) 0%, rgba(255, 255, 255, 0.9) 60%, white 100%);
 }
 
 .sectionSearchForm .sectionInner {
@@ -476,194 +483,15 @@ input {
   margin-bottom: 1.25rem;
 }
 
-.sectionSearchForm_form {
-  font-family: "almoni",sans-serif;
-  font-weight: 500;
-  font-size: 1.25rem;
-}
-
-.sectionSearchForm_form .firstLineForm {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 1.25rem;
-  padding: 0 0.625rem;
-}
-
-.sectionSearchForm_form .secondLineForm {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  margin-bottom: 2.5rem;
-  padding: 0 0.625rem;
-}
-
-.sectionSearchForm_form .checkboxSport {
-  margin-left: 0.625rem;
-  width: 1.25rem;
-  height: 1.25rem;
-}
-
-.sectionSearchForm_form .labelSport {
-  margin-left: 1.25rem;
-  color: #00549B;
-}
-
-.sectionSearchForm_form .destination,
-.sectionSearchForm_form .departure,
-.sectionSearchForm_form .arrival {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  width: 22.8125rem;
-  height: 2.5rem;
-  padding: 0.625rem 1.25rem;
-  background: #fff url(/img/svg/inputArrow.svg) 0.625rem no-repeat;
-  color: #00559bB2;
-}
-
-.sectionSearchForm_form-personalInformation .personalInformationHeader {
-  height: 3.5625rem;
-  background-color: #00549B;
-  color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  padding-right: 1.25rem;
-  font-family: "almoni",sans-serif;
-  font-weight: 700;
-  font-size: 2rem;
-}
-
-.sectionSearchForm_form-personalInformation .personalInformationMain {
-  margin-bottom: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  min-height: 16.5rem;
-  background-color: #FAFAFA;
-  padding: 0 1.25rem;
-  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.199);
-          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.199);
-}
-
-.sectionSearchForm_form-personalInformation .personalInformationMain .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  font-family: "almoni",sans-serif;
-  font-weight: 700;
-  font-size: 1.25rem;
-}
-
-.sectionSearchForm_form-personalInformation .personalInformationMain .container select,
-.sectionSearchForm_form-personalInformation .personalInformationMain .container input {
-  font-family: "almoni",sans-serif;
-  font-weight: 500;
-  font-size: 1.25rem;
-  height: 2.5rem;
-  width: 13rem;
-  color: #888888;
-  margin-top: 0.3125rem;
-}
-
-.sectionSearchForm_form-personalInformation .personalInformationMain .container #lastSelect {
-  width: 41.6875rem;
-  margin-bottom: 1.25rem;
-}
-
-.sectionSearchForm_form-personalInformation .personalInformationFooter {
-  height: 3.5625rem;
-  background-color: #EEEEEE;
-  color: #00549B;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  padding-right: 1.25rem;
-  font-family: "almoni",sans-serif;
-  font-weight: 700;
-  font-size: 1.25rem;
-}
-
-.sectionSearchForm_form .btn {
-  display: block;
-  margin: 2.5rem auto 0;
-  height: 3.125rem;
-  width: 12.75rem;
-  text-align: center;
-  font-family: "almoni",sans-serif;
-  font-weight: 700;
-  font-size: 1.25rem;
-  color: #fff;
-  background-color: #00549B;
-}
-
-.sectionSearchForm .calculator2019 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.sectionSearchForm .calculator2019 a:link, .sectionSearchForm .calculator2019 a:visited {
+.sectionSearchForm .calculator2019 a:link, .sectionSearchForm .calculator2019 a:visited, .sectionSearchForm .calculator2019 a:hover {
   color: #000;
   text-decoration: none;
 }
 
-.sectionSearchForm .calculator2019 a:hover {
-  color: #000;
+.sectionSearchForm .calculator2019 a img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .sectionSearchForm .buy a p {
@@ -691,16 +519,20 @@ input {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: -5px;
 }
 
 .sectionSearchForm .calculator2019 .dates label {
-  width: 200px;
-  padding: 5px;
+  width: 12.5rem;
+  padding: 0.3125rem 0 0.3125rem 0;
 }
 
 .sectionSearchForm .calculator2019 .dates label span.title {
   display: block;
+  font-family: "almoni",sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  margin-right: 0.625rem;
+  color: #00549B;
 }
 
 .sectionSearchForm .calculator2019 .dates label input[type="text"] {
@@ -720,8 +552,10 @@ input {
 }
 
 .sectionSearchForm .calculator2019 .fields {
-  margin: 0 0 10px 0;
+  margin: 0 0 1.25rem 0;
   padding: 0;
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.199);
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.199);
 }
 
 .sectionSearchForm .calculator2019 .fields li {
@@ -732,73 +566,101 @@ input {
       flex-wrap: wrap;
   margin: 15px 0 0 0;
   background: #fafafa;
-  border: 1px #ececec solid;
   border-radius: 3px;
-  padding: 5px;
+  min-height: 16.5rem;
 }
 
 .sectionSearchForm .calculator2019 .fields li .num {
-  width: 100%;
-  padding: 0 0 10px 0;
-  border-bottom: 1px #ececec solid;
-  margin: 5px;
-  font-size: 14px;
-  font-weight: bold;
+  height: 3.5625rem;
+  background-color: #00549B;
+  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-right: 1.25rem;
+  font-family: "almoni",sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  width: 100%;
 }
 
 .sectionSearchForm .calculator2019 .fields li .num a {
-  width: 10px;
-  height: 10px;
+  width: 0.9375rem;
+  height: 0.9375rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 50%;
   background: #ef1616;
-  font-size: 12px;
-  margin: 0 0 0 5px;
+  font-size: 0.9375rem;
+  line-height: 0.9375rem;
+  margin: 0 0 0 0.3125rem;
   color: #fff;
   position: relative;
-  bottom: -1px;
+}
+
+.sectionSearchForm .calculator2019 .fields li .lastInput {
+  width: 41.6875rem;
 }
 
 .sectionSearchForm .calculator2019 .fields li label {
   width: 20%;
-  padding: 5px;
+  padding: 0.3125rem;
   position: relative;
+  padding: 1.25rem;
+}
+
+.sectionSearchForm .calculator2019 .fields li label .lastInput {
+  width: 41.6875rem;
 }
 
 .sectionSearchForm .calculator2019 .fields li label span.title {
   display: block;
+  color: #5A5A5A;
+  font-family: "almoni",sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
 }
 
 .sectionSearchForm .calculator2019 .fields li label div.error {
-  font-size: 10px;
+  font-family: "almoni",sans-serif;
+  font-weight: 500;
+  font-size: 0.625rem;
   color: red;
 }
 
 .sectionSearchForm .calculator2019 .fields li label select,
 .sectionSearchForm .calculator2019 .fields li label input {
   width: 100%;
+  font-family: "almoni",sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: #888888;
+  height: 2.5rem;
 }
 
 .sectionSearchForm .calculator2019 .fields li label:before {
   content: "\25BE";
   position: absolute;
-  font-size: 12px;
-  left: 15px;
-  top: 29px;
+  font-size: 0.75rem;
+  left: 2.1875rem;
+  top: calc(50% + 5px);
 }
 
 .sectionSearchForm .calculator2019 .fields li label.age:before {
@@ -806,24 +668,25 @@ input {
 }
 
 .sectionSearchForm .calculator2019 #addperson {
-  background: #fff;
-  border: 1px #ececec solid;
-  border-radius: 3px;
-  line-height: 25px;
-  padding: 0 7px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  cursor: pointer;
+  height: 3.5625rem;
+  background-color: #EEEEEE;
+  color: #00549B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #069;
-  font-weight: bold;
-  cursor: pointer;
-  margin: 0 0 10px 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-right: 1.25rem;
+  font-family: "almoni",sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  width: 100%;
+  border: none;
 }
 
 .sectionSearchForm .calculator2019 #addperson:hover {
@@ -832,27 +695,19 @@ input {
   border-color: #069;
 }
 
-.sectionSearchForm .calculator2019 .button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0 0 20px 0;
-}
-
 .sectionSearchForm .calculator2019 #calculate {
-  padding: 0 15px;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 40px;
-  border-radius: 3px;
-  background: #57aa1a;
-  border: 1px #357903 solid;
+  display: block;
+  margin: 2.5rem auto 0;
+  height: 3.125rem;
+  width: 12.75rem;
+  text-align: center;
+  font-family: "almoni",sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
   color: #fff;
+  background-color: #00549B;
+  border: none;
   cursor: pointer;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
 }
 
 .sectionSearchForm .calculator2019 .results {
@@ -871,14 +726,19 @@ input {
 }
 
 .sectionSearchForm .t-check-in, .sectionSearchForm .t-check-out {
-  border: 1px #ececec solid;
+  font-family: "almoni",sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  border: 1px #00549B solid;
   border-radius: 3px;
-  width: 190px;
   padding: 0 10px;
+  background-color: #fff;
+  width: 22.8125rem;
+  height: 2.5rem;
+  color: #00559bB2;
 }
 
 .sectionSearchForm .t-dates {
-  height: 30px;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -898,6 +758,9 @@ input {
   line-height: inherit;
   padding: 0 !important;
   position: static;
+  font-family: "almoni",sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
 }
 
 .sectionSearchForm .t-next, .sectionSearchForm .t-prev, .sectionSearchForm .t-table-condensed td, .sectionSearchForm .t-table-condensed th {
@@ -965,59 +828,41 @@ input {
   display: none;
 }
 
-.sectionSearchForm .calculator2019 table {
-  border: 1px #ececec solid;
+.sectionSearchForm .calculator2019 .tablewrap ul {
+  display: none;
+}
+
+.sectionSearchForm input[type="checkbox"] {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.sectionSearchForm .tablewrap-inner {
+  font-family: "almoni",sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  margin-top: 1.25rem;
+}
+
+.sectionSearchForm .tablewrap-inner table {
   width: 100%;
   border-collapse: collapse;
 }
 
-.sectionSearchForm .calculator2019 table th, .sectionSearchForm table td {
-  border: 1px #ececec solid;
-  padding: 5px;
-  width: calc(100%/8);
-}
-
-.sectionSearchForm .calculator2019 table th {
-  font-weight: bold;
-  vertical-align: middle;
-}
-
-.sectionSearchForm .calculator2019 table th img {
-  max-width: 80%;
-  max-height: 38px;
-}
-
-.sectionSearchForm .calculator2019 table th:first-child {
-  background: #069;
-  color: #fff;
-  font-size: 16px;
-}
-
-.sectionSearchForm .calculator2019 table td {
+.sectionSearchForm .tablewrap-inner table th, .sectionSearchForm .tablewrap-inner table td {
+  border: 1px solid #CCC;
+  height: 3.125rem;
   text-align: center;
-  font-weight: bold;
-  color: #001AB4;
+  color: #00549B;
 }
 
-.sectionSearchForm .calculator2019 table td:first-child {
-  text-align: right;
-  font-weight: bold;
-  color: #001AB4;
+.sectionSearchForm .tablewrap-inner table th {
+  width: 12.5rem;
 }
 
-.sectionSearchForm .calculator2019 table tr:hover td {
-  background: #fafafa;
-}
-
-.sectionSearchForm .calculator2019 .results table tr:last-child td,
-.sectionSearchForm .calculator2019 .results table tr:last-child:hover td {
-  background: #f4f9f0;
-  font-weight: bold;
-  color: #2e7900;
-}
-
-.sectionSearchForm .calculator2019 .tablewrap ul {
-  display: none;
+.sectionSearchForm .tablewrap-inner table tr:last-child th, .sectionSearchForm .tablewrap-inner table tr:last-child td {
+  color: #FFF;
+  background-color: #00549B;
 }
 
 .sectionFirstTable {
@@ -1074,19 +919,19 @@ input {
   margin-top: 2.5rem;
 }
 
-.sectionSecondTable .secondTable {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 1.25rem;
-}
-
-.sectionSecondTable .secondTable caption {
+.sectionSecondTable .caption {
   font-family: "almoni",sans-serif;
   font-weight: 700;
   font-size: 1.375rem;
   color: #00549B;
   text-align: center;
   margin-bottom: 2.5rem;
+}
+
+.sectionSecondTable .secondTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.25rem;
 }
 
 .sectionSecondTable .secondTable th, .sectionSecondTable .secondTable td {
@@ -1375,6 +1220,7 @@ input {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 1.875rem;
+  width: 100%;
 }
 
 .sectionFooter .sectionFooter_firstLine .footerImg {
@@ -1458,7 +1304,7 @@ input {
     padding: 0 1.25rem;
   }
   .sectionVideo {
-    max-height: 40.875rem;
+    height: 40.875rem;
     padding: 1.25rem 0;
   }
   .sectionVideo .sectionVideo_media iframe {
@@ -1474,7 +1320,35 @@ input {
   }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 900px) {
+  .sectionSearchForm .calculator2019 .fields li label {
+    padding: 0.625rem;
+  }
+  .sectionSearchForm .calculator2019 .fields li label::before {
+    left: 1.0625rem;
+  }
+  .sectionSearchForm .calculator2019 .fields li label span.title,
+  .sectionSearchForm .calculator2019 .fields li label select,
+  .sectionSearchForm .calculator2019 .fields li label input {
+    font-size: 0.9375rem;
+  }
+  .sectionSearchForm .calculator2019 .fields li .lastInput {
+    width: 100%;
+  }
+  .sectionFirstTable .firstTable th {
+    padding-left: 0.3125rem;
+  }
+  .sectionFirstTable .firstTable td {
+    padding: 0.3125rem;
+    font-size: 1rem;
+  }
+  .sectionSecondTable .secondTable th {
+    padding-left: 0.3125rem;
+  }
+  .sectionSecondTable .secondTable td {
+    padding: 0.3125rem;
+    font-size: 1rem;
+  }
   .sectionVideo .sectionVideo_list .textBetweenLists {
     font-size: 1rem;
   }
@@ -1484,6 +1358,71 @@ input {
   .sectionVideo .sectionVideo_media iframe {
     width: 24.6875rem;
     height: 17.1875rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionSearchForm .calculator2019 .fields li label {
+    padding: 0.625rem;
+  }
+  .sectionSearchForm .calculator2019 .fields li label::before {
+    left: 1.0625rem;
+  }
+  .sectionSearchForm .calculator2019 .fields li label span.title,
+  .sectionSearchForm .calculator2019 .fields li label select,
+  .sectionSearchForm .calculator2019 .fields li label input {
+    font-size: 0.9375rem;
+  }
+  .sectionFooter .sectionFooter_firstLine .footerImg {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .sectionSearchForm .calculator2019 .fields li {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sectionSearchForm .calculator2019 .fields li .lastInput {
+    width: 100%;
+  }
+  .sectionSearchForm .calculator2019 .fields li label {
+    width: 100%;
+  }
+  .sectionSearchForm .calculator2019 .fields li label select {
+    width: 100%;
+  }
+  .sectionSearchForm .t-datepicker {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sectionSearchForm .t-check-in,
+  .sectionSearchForm .t-check-out {
+    margin-bottom: 0.625rem;
+    width: 100%;
+  }
+  .sectionVideo {
+    height: auto;
+  }
+  .sectionVideo .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sectionVideo .content .sectionVideo_list {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .sectionVideo .sectionVideo_media iframe {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

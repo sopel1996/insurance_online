@@ -14,7 +14,7 @@ const browserSync = require('browser-sync').create();
 //         .pipe(browserSync.stream());
 // }
 function style() {
-    return gulp.src('./scss_mob/**/style_mob.scss')
+    return gulp.src('./scss/**/style.scss')
         .pipe(sass())
         // .pipe(autoprefixer({
         //     cascade: false
@@ -29,7 +29,7 @@ function watch() {
             baseDir: './'
         }
     })
-    gulp.watch('./scss_mob/**/*.scss', style);
+    gulp.watch('./scss/**/*.scss', style);
     // gulp.watch('./scss/**/style.scss', style);
     gulp.watch('./*.html').on('change', browserSync.reload);
 }

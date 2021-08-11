@@ -5,10 +5,14 @@
     box-sizing: border-box;
     text-align: right;
 }
-a{
+a,
+a:active,
+a:visited{
     outline: none;
     text-decoration: none;
+    color: #0070cc;
 }
+
 h1,h2,h3,h4,h5,h6{margin:0;}
 .sectionInner{
     max-width: toRem(1170);

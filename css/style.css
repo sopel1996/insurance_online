@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -14,38 +13,39 @@ html {
 }
 
 /* Sections
-   ========================================================================== */
+     ========================================================================== */
 /**
- * Remove the margin in all browsers.
- */
+   * Remove the margin in all browsers.
+   */
 body {
   margin: 0;
 }
 
 /**
- * Render the `main` element consistently in IE.
- */
+   * Render the `main` element consistently in IE.
+   */
 main {
   display: block;
 }
 
 /**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
 /* Grouping content
-   ========================================================================== */
+     ========================================================================== */
 /**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -54,9 +54,9 @@ hr {
 }
 
 /**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
 pre {
   font-family: monospace, monospace;
   /* 1 */
@@ -65,39 +65,40 @@ pre {
 }
 
 /* Text-level semantics
-   ========================================================================== */
+     ========================================================================== */
 /**
- * Remove the gray background on active links in IE 10.
- */
+   * Remove the gray background on active links in IE 10.
+   */
 a {
   background-color: transparent;
 }
 
 /**
- * 1. Remove the bottom border in Chrome 57-
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
 abbr[title] {
   border-bottom: none;
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
 /**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
 b,
 strong {
   font-weight: bolder;
 }
 
 /**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
 code,
 kbd,
 samp {
@@ -108,16 +109,16 @@ samp {
 }
 
 /**
- * Add the correct font size in all browsers.
- */
+   * Add the correct font size in all browsers.
+   */
 small {
   font-size: 80%;
 }
 
 /**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
 sub,
 sup {
   font-size: 75%;
@@ -135,20 +136,20 @@ sup {
 }
 
 /* Embedded content
-   ========================================================================== */
+     ========================================================================== */
 /**
- * Remove the border on images inside links in IE 10.
- */
+   * Remove the border on images inside links in IE 10.
+   */
 img {
   border-style: none;
 }
 
 /* Forms
-   ========================================================================== */
+     ========================================================================== */
 /**
- * 1. Change the font styles in all browsers.
- * 2. Remove the margin in Firefox and Safari.
- */
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
 button,
 input,
 optgroup,
@@ -165,9 +166,9 @@ textarea {
 }
 
 /**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
 button,
 input {
   /* 1 */
@@ -175,9 +176,9 @@ input {
 }
 
 /**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
 button,
 select {
   /* 1 */
@@ -185,51 +186,52 @@ select {
 }
 
 /**
- * Correct the inability to style clickable types in iOS and Safari.
- */
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
 button,
-[type=button],
-[type=reset],
-[type=submit] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
 }
 
 /**
- * Remove the inner border and padding in Firefox.
- */
+   * Remove the inner border and padding in Firefox.
+   */
 button::-moz-focus-inner,
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner {
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
 /**
- * Restore the focus styles unset by the previous rule.
- */
+   * Restore the focus styles unset by the previous rule.
+   */
 button:-moz-focusring,
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring {
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
 /**
- * Correct the padding in Firefox.
- */
+   * Correct the padding in Firefox.
+   */
 fieldset {
   padding: 0.35em 0.75em 0.625em;
 }
 
 /**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
- */
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
 legend {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -244,44 +246,45 @@ legend {
 }
 
 /**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
 progress {
   vertical-align: baseline;
 }
 
 /**
- * Remove the default vertical scrollbar in IE 10+.
- */
+   * Remove the default vertical scrollbar in IE 10+.
+   */
 textarea {
   overflow: auto;
 }
 
 /**
- * 1. Add the correct box sizing in IE 10.
- * 2. Remove the padding in IE 10.
- */
-[type=checkbox],
-[type=radio] {
-  box-sizing: border-box;
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
 }
 
 /**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
 /**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
-[type=search] {
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -289,16 +292,16 @@ textarea {
 }
 
 /**
- * Remove the inner padding in Chrome and Safari on macOS.
- */
-[type=search]::-webkit-search-decoration {
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
 /**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   /* 1 */
@@ -307,33 +310,33 @@ textarea {
 }
 
 /* Interactive
-   ========================================================================== */
+     ========================================================================== */
 /*
- * Add the correct display in Edge, IE 10+, and Firefox.
- */
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
 details {
   display: block;
 }
 
 /*
- * Add the correct display in all browsers.
- */
+   * Add the correct display in all browsers.
+   */
 summary {
   display: list-item;
 }
 
 /* Misc
-   ========================================================================== */
+     ========================================================================== */
 /**
- * Add the correct display in IE 10+.
- */
+   * Add the correct display in IE 10+.
+   */
 template {
   display: none;
 }
 
 /**
- * Add the correct display in IE 10.
- */
+   * Add the correct display in IE 10.
+   */
 [hidden] {
   display: none;
 }
@@ -344,34 +347,42 @@ template {
   font-weight: 300;
   font-display: swap;
 }
+
 @font-face {
   font-family: "almoni";
   src: url("/fonts/almoni-dl-aaa-regular.otf") format("openType");
   font-weight: 500;
   font-display: swap;
 }
+
 @font-face {
   font-family: "almoni";
   src: url("/fonts/almoni-dl-aaa-bold.otf") format("openType");
   font-weight: 700;
   font-display: swap;
 }
+
 @font-face {
   font-family: "almoni";
   src: url("/fonts/almoni-dl-aaa-black.otf") format("openType");
   font-weight: 900;
   font-display: swap;
 }
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   text-align: right;
 }
 
-a {
+a,
+a:active,
+a:visited {
   outline: none;
   text-decoration: none;
+  color: #0070cc;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -416,8 +427,9 @@ input {
   overflow: hidden;
   /* New Picker */
 }
+
 .sectionSearchForm::before {
-  content: "";
+  content: '';
   position: absolute;
   z-index: 5;
   top: 0;
@@ -425,13 +437,16 @@ input {
   left: 0;
   bottom: 0;
   background: #c6c6c6;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(198, 198, 198, 0.6)), color-stop(60%, rgba(255, 255, 255, 0.9)), to(white));
   background: linear-gradient(180deg, rgba(198, 198, 198, 0.6) 0%, rgba(255, 255, 255, 0.9) 60%, white 100%);
 }
+
 .sectionSearchForm .sectionInner {
   position: relative;
   z-index: 10;
   padding-top: 3.75rem;
 }
+
 .sectionSearchForm_Logo {
   width: 18.4375rem;
   height: 5.8125rem;
@@ -440,44 +455,51 @@ input {
   background: url(/img/svg/Logo.svg) 50% 50% no-repeat;
   background-size: cover;
 }
+
 .sectionSearchForm_title {
-  font-family: "almoni", sans-serif;
+  font-family: "almoni",sans-serif;
   font-weight: 900;
   font-size: 2.625rem;
   color: #00549B;
   text-align: center;
   margin-bottom: 1.25rem;
 }
+
 .sectionSearchForm_subtitle {
-  font-family: "almoni", sans-serif;
+  font-family: "almoni",sans-serif;
   font-weight: 700;
   font-size: 2rem;
   color: #000;
   text-align: center;
   margin-bottom: 1.25rem;
 }
+
 .sectionSearchForm_text {
-  font-family: "almoni", sans-serif;
+  font-family: "almoni",sans-serif;
   font-weight: 500;
   font-size: 1.375rem;
   color: #000;
   text-align: center;
   margin-bottom: 1.25rem;
 }
+
 .sectionSearchForm .calculator2019 a:link, .sectionSearchForm .calculator2019 a:visited, .sectionSearchForm .calculator2019 a:hover {
   color: #000;
   text-decoration: none;
 }
+
 .sectionSearchForm .calculator2019 a img {
   display: block;
   margin: 0 auto;
   width: 100%;
 }
+
 .sectionSearchForm .buy a p {
   direction: rtl;
 }
-.sectionSearchForm .calculator2019 input[type=text],
-.sectionSearchForm .calculator2019 input[type=number],
+
+.sectionSearchForm .calculator2019 input[type="text"],
+.sectionSearchForm .calculator2019 input[type="number"],
 .sectionSearchForm .calculator2019 select {
   border: 1px #ececec solid;
   border-radius: 3px;
@@ -490,66 +512,100 @@ input {
   padding: 0 10px;
   -webkit-appearance: none;
 }
+
 .sectionSearchForm .calculator2019 .dates {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
+
 .sectionSearchForm .calculator2019 .dates label {
   width: 12.5rem;
   padding: 0.3125rem 0 0.3125rem 0;
 }
+
 .sectionSearchForm .calculator2019 .dates label span.title {
   display: block;
-  font-family: "almoni", sans-serif;
+  font-family: "almoni",sans-serif;
   font-weight: 500;
   font-size: 1.125rem;
   margin-right: 0.625rem;
   color: #00549B;
 }
-.sectionSearchForm .calculator2019 .dates label input[type=text] {
+
+.sectionSearchForm .calculator2019 .dates label input[type="text"] {
   width: 100%;
 }
+
 .sectionSearchForm .calculator2019 .dates label.checkbox {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .sectionSearchForm .calculator2019 .dates label.etgari,
 .sectionSearchForm .calculator2019 .dates label.ski {
   display: none;
 }
+
 .sectionSearchForm .calculator2019 .fields {
   margin: 0 0 1.25rem 0;
   padding: 0;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.199);
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.199);
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.199);
 }
+
 .sectionSearchForm .calculator2019 .fields li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 15px 0 0 0;
   background: #fafafa;
   border-radius: 3px;
   min-height: 16.5rem;
 }
+
 .sectionSearchForm .calculator2019 .fields li .num {
   height: 3.5625rem;
   background-color: #00549B;
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   padding-right: 1.25rem;
-  font-family: "almoni", sans-serif;
+  font-family: "almoni",sans-serif;
   font-weight: 700;
   font-size: 2rem;
   width: 100%;
 }
+
 .sectionSearchForm .calculator2019 .fields li .num a {
   width: 0.9375rem;
   height: 0.9375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 50%;
   background: #ef1616;
   font-size: 0.9375rem;
@@ -558,77 +614,94 @@ input {
   color: #fff;
   position: relative;
 }
+
 .sectionSearchForm .calculator2019 .fields li .lastInput {
   width: 41.6875rem;
 }
+
 .sectionSearchForm .calculator2019 .fields li label {
   width: 20%;
   padding: 0.3125rem;
   position: relative;
   padding: 1.25rem;
 }
+
 .sectionSearchForm .calculator2019 .fields li label .lastInput {
   width: 41.6875rem;
 }
+
 .sectionSearchForm .calculator2019 .fields li label span.title {
   display: block;
   color: #5A5A5A;
-  font-family: "almoni", sans-serif;
+  font-family: "almoni",sans-serif;
   font-weight: 700;
   font-size: 1.25rem;
 }
+
 .sectionSearchForm .calculator2019 .fields li label div.error {
-  font-family: "almoni", sans-serif;
+  font-family: "almoni",sans-serif;
   font-weight: 500;
   font-size: 0.625rem;
   color: red;
 }
+
 .sectionSearchForm .calculator2019 .fields li label select,
 .sectionSearchForm .calculator2019 .fields li label input {
   width: 100%;
-  font-family: "almoni", sans-serif;
+  font-family: "almoni",sans-serif;
   font-weight: 500;
   font-size: 1.25rem;
   color: #888888;
   height: 2.5rem;
 }
+
 .sectionSearchForm .calculator2019 .fields li label:before {
-  content: "▾";
+  content: "\25BE";
   position: absolute;
   font-size: 0.75rem;
   left: 2.1875rem;
   top: calc(50% + 5px);
 }
+
 .sectionSearchForm .calculator2019 .fields li label.age:before {
   display: none;
 }
+
 .sectionSearchForm .calculator2019 #addperson {
   cursor: pointer;
   height: 3.5625rem;
   background-color: #EEEEEE;
   color: #00549B;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   padding-right: 1.25rem;
-  font-family: "almoni", sans-serif;
+  font-family: "almoni",sans-serif;
   font-weight: 700;
   font-size: 1.25rem;
   width: 100%;
   border: none;
 }
+
 .sectionSearchForm .calculator2019 #addperson:hover {
   color: #fff;
   background: #069;
   border-color: #069;
 }
+
 .sectionSearchForm .calculator2019 #calculate {
   display: block;
   margin: 2.5rem auto 0;
   height: 3.125rem;
   width: 12.75rem;
   text-align: center;
-  font-family: "almoni", sans-serif;
+  font-family: "almoni",sans-serif;
   font-weight: 700;
   font-size: 1.25rem;
   color: #fff;
@@ -636,18 +709,24 @@ input {
   border: none;
   cursor: pointer;
 }
+
 .sectionSearchForm .calculator2019 .results {
   display: none;
   margin: 0 0 20px 0;
 }
+
 .sectionSearchForm .t-datepicker {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .sectionSearchForm .t-check-in, .sectionSearchForm .t-check-out, .sectionSearchForm .t-datepicker {
   float: none;
 }
+
 .sectionSearchForm .t-check-in, .sectionSearchForm .t-check-out {
-  font-family: "almoni", sans-serif;
+  font-family: "almoni",sans-serif;
   font-weight: 500;
   font-size: 1.25rem;
   border: 1px #00549B solid;
@@ -658,32 +737,42 @@ input {
   height: 2.5rem;
   color: #00559bB2;
 }
+
 .sectionSearchForm .t-dates {
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .sectionSearchForm .t-datepicker-days .t-table-wrap {
   margin-left: 0;
   margin-right: 2%;
 }
+
 .sectionSearchForm .t-check-in .t-date-info-title, .sectionSearchForm .t-check-out .t-date-info-title {
   width: auto !important;
   line-height: inherit;
   padding: 0 !important;
   position: static;
-  font-family: "almoni", sans-serif;
+  font-family: "almoni",sans-serif;
   font-weight: 500;
   font-size: 1.25rem;
 }
+
 .sectionSearchForm .t-next, .sectionSearchForm .t-prev, .sectionSearchForm .t-table-condensed td, .sectionSearchForm .t-table-condensed th {
   border: 0 !important;
   width: auto !important;
   padding: 10px !important;
 }
+
 .sectionSearchForm .t-table-condensed {
   border: 0 !important;
 }
+
 .sectionSearchForm .t-table-condensed th:first-child,
 .sectionSearchForm .t-table-condensed td:first-child {
   text-align: center !important;
@@ -692,13 +781,16 @@ input {
   color: inherit !important;
   font-weight: normal !important;
 }
+
 .sectionSearchForm .t-table-condensed tr th:first-child {
   font-weight: bold;
 }
+
 .sectionSearchForm .t-table-condensed tbody td, .sectionSearchForm .t-table-condensed tbody td:first-child {
   background: #efefef !important;
   border: 1px #fff solid !important;
 }
+
 .sectionSearchForm .t-table-condensed tbody td:hover,
 .sectionSearchForm .t-table-condensed tbody .t-range,
 .sectionSearchForm .t-table-condensed tbody .t-range:first-child,
@@ -712,50 +804,62 @@ input {
   background: #069 !important;
   color: #fff !important;
 }
+
 .sectionSearchForm .t-table-condensed tbody .t-today,
 .sectionSearchForm .t-today .t-hover-day-content {
   background: orange !important;
   color: #fff !important;
 }
+
 .sectionSearchForm .t-today:after, .sectionSearchForm .t-today:hover:after {
   border-top-color: orange;
 }
+
 .sectionSearchForm .t-month-check-in,
 .sectionSearchForm .t-month-check-out {
   margin: 0 5px;
 }
+
 .sectionSearchForm .t-check-in {
   margin: 0 0 0 10px;
 }
+
 .sectionSearchForm .t-input {
   display: none;
 }
+
 .sectionSearchForm .calculator2019 .tablewrap ul {
   display: none;
 }
-.sectionSearchForm input[type=checkbox] {
+
+.sectionSearchForm input[type="checkbox"] {
   width: 1.25rem;
   height: 1.25rem;
 }
+
 .sectionSearchForm .tablewrap-inner {
-  font-family: "almoni", sans-serif;
+  font-family: "almoni",sans-serif;
   font-weight: 500;
   font-size: 1.125rem;
   margin-top: 1.25rem;
 }
+
 .sectionSearchForm .tablewrap-inner table {
   width: 100%;
   border-collapse: collapse;
 }
+
 .sectionSearchForm .tablewrap-inner table th, .sectionSearchForm .tablewrap-inner table td {
   border: 1px solid #CCC;
   height: 3.125rem;
   text-align: center;
   color: #00549B;
 }
+
 .sectionSearchForm .tablewrap-inner table th {
   width: 12.5rem;
 }
+
 .sectionSearchForm .tablewrap-inner table tr:last-child th, .sectionSearchForm .tablewrap-inner table tr:last-child td {
   color: #FFF;
   background-color: #00549B;
@@ -764,26 +868,30 @@ input {
 .sectionFirstTable {
   margin-top: 2.5rem;
 }
+
 .sectionFirstTable .firstTable {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 1.25rem;
 }
+
 .sectionFirstTable .firstTable th, .sectionFirstTable .firstTable td {
   border: 1px solid #CCC;
 }
+
 .sectionFirstTable .firstTable th {
   max-width: 18.3125rem;
   height: 5.625rem;
   color: #00549B;
   padding-right: 1.25rem;
   padding-left: 9.375rem;
-  font-family: "almoni", sans-serif;
+  font-family: "almoni",sans-serif;
   font-weight: 700;
   font-size: 1.25rem;
 }
+
 .sectionFirstTable .firstTable td {
-  font-family: "almoni", sans-serif;
+  font-family: "almoni",sans-serif;
   font-weight: 500;
   font-size: 1.25rem;
   max-width: 7.9375rem;
@@ -791,12 +899,15 @@ input {
   color: #5A5A5A;
   text-align: center;
 }
+
 .sectionFirstTable .firstTable td img {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
+
 .sectionFirstTable .textAfterTable {
-  font-family: "almoni", sans-serif;
+  font-family: "almoni",sans-serif;
   font-weight: 500;
   font-size: 1.125rem;
   color: #5A5A5A;
@@ -807,38 +918,44 @@ input {
 .sectionSecondTable {
   margin-top: 2.5rem;
 }
+
 .sectionSecondTable .caption {
-  font-family: "almoni", sans-serif;
+  font-family: "almoni",sans-serif;
   font-weight: 700;
   font-size: 1.375rem;
   color: #00549B;
   text-align: center;
   margin-bottom: 2.5rem;
 }
+
 .sectionSecondTable .secondTable {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 1.25rem;
 }
+
 .sectionSecondTable .secondTable th, .sectionSecondTable .secondTable td {
   border: 1px solid #CCC;
 }
+
 .sectionSecondTable .secondTable tr:nth-child(4) th, .sectionSecondTable .secondTable tr:nth-child(5) th, .sectionSecondTable .secondTable tr:nth-child(6) th, .sectionSecondTable .secondTable tr:nth-child(7) th, .sectionSecondTable .secondTable tr:nth-child(8) th, .sectionSecondTable .secondTable tr:nth-child(9) th, .sectionSecondTable .secondTable tr:nth-child(10) th, .sectionSecondTable .secondTable tr:nth-child(11) th {
   color: #fff;
   background-color: #00549B;
 }
+
 .sectionSecondTable .secondTable th {
   max-width: 18.3125rem;
   height: 5.625rem;
   color: #00549B;
   padding-right: 1.25rem;
   padding-left: 9.375rem;
-  font-family: "almoni", sans-serif;
+  font-family: "almoni",sans-serif;
   font-weight: 700;
   font-size: 1.25rem;
 }
+
 .sectionSecondTable .secondTable td {
-  font-family: "almoni", sans-serif;
+  font-family: "almoni",sans-serif;
   font-weight: 500;
   font-size: 1.25rem;
   max-width: 7.9375rem;
@@ -846,20 +963,24 @@ input {
   color: #5A5A5A;
   text-align: center;
 }
+
 .sectionSecondTable .secondTable td img {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
+
 .sectionSecondTable .textAfterTable {
-  font-family: "almoni", sans-serif;
+  font-family: "almoni",sans-serif;
   font-weight: 700;
   font-size: 1.125rem;
   color: #00549B;
   text-align: center;
   margin-bottom: 1.25rem;
 }
+
 .sectionSecondTable .markedTextAfterTable {
-  font-family: "almoni", sans-serif;
+  font-family: "almoni",sans-serif;
   font-weight: 700;
   font-size: 0.75rem;
   color: #F20D0D;
@@ -873,8 +994,9 @@ input {
   background-size: cover;
   position: relative;
 }
+
 .sectionVideo::before {
-  content: "";
+  content: '';
   position: absolute;
   z-index: 5;
   top: 0;
@@ -883,49 +1005,74 @@ input {
   bottom: 0;
   background: rgba(250, 250, 250, 0.75);
 }
+
 .sectionVideo .sectionInner {
   position: relative;
   z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .sectionVideo .content {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
   margin-bottom: 1.5625rem;
 }
+
 .sectionVideo .title {
-  font-family: "almoni", sans-serif;
+  font-family: "almoni",sans-serif;
   font-weight: 700;
   font-size: 1.75rem;
   color: #00549B;
   margin-bottom: 0.1875rem;
   margin-top: 2.5rem;
 }
+
 .sectionVideo .sectionVideo_list .list {
   list-style: none;
-  font-family: "almoni", sans-serif;
+  font-family: "almoni",sans-serif;
   font-weight: 500;
   font-size: 1.125rem;
   color: #5A5A5A;
   margin-bottom: 0.625rem;
 }
+
 .sectionVideo .sectionVideo_list .list:last-child {
   margin: 0;
 }
+
 .sectionVideo .sectionVideo_list .textBetweenLists {
-  font-family: "almoni", sans-serif;
+  font-family: "almoni",sans-serif;
   font-weight: 700;
   font-size: 1.375rem;
   color: #00549B;
   margin-bottom: 0.625rem;
 }
+
 .sectionVideo .sectionVideo_media iframe {
   width: 45.5625rem;
   height: 32.875rem;
@@ -934,49 +1081,59 @@ input {
 .sectionAccordeon {
   margin-top: 2.5rem;
 }
+
 .sectionAccordeon .title {
   text-align: center;
-  font-family: "almoni", sans-serif;
+  font-family: "almoni",sans-serif;
   font-weight: 700;
   font-size: 1.375rem;
   color: #00549B;
   margin-bottom: 0.625rem;
 }
+
 .sectionAccordeon .subtitle {
   text-align: center;
-  font-family: "almoni", sans-serif;
+  font-family: "almoni",sans-serif;
   font-weight: 500;
   font-size: 1.125rem;
   color: #5A5A5A;
   margin-bottom: 2.5rem;
 }
+
 .sectionAccordeon .accordeonTitle {
   text-align: center;
-  font-family: "almoni", sans-serif;
+  font-family: "almoni",sans-serif;
   font-weight: 700;
   font-size: 1.75rem;
   color: #00549B;
   margin-bottom: 1.25rem;
 }
+
 .sectionAccordeon .accordeonItem {
   position: relative;
   margin-bottom: 0.625rem;
 }
+
 .sectionAccordeon .accordeonItem_input {
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
 }
+
 .sectionAccordeon .accordeonItem_input:checked ~ .accordeonItem_trigger::after {
   content: "-";
 }
+
 .sectionAccordeon .accordeonItem_input:checked ~ .accordeonItem_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .sectionAccordeon .accordeonItem_trigger {
   position: relative;
-  font-family: "almoni", sans-serif;
+  font-family: "almoni",sans-serif;
   font-weight: 700;
   font-size: 1.375rem;
   display: block;
@@ -986,11 +1143,21 @@ input {
   color: #fff;
   width: 100%;
   min-height: 2.8125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
+
 .sectionAccordeon .accordeonItem_trigger::after {
   display: block;
   color: #fff;
@@ -998,79 +1165,135 @@ input {
   position: absolute;
   left: 1.25rem;
 }
+
 .sectionAccordeon .accordeonItem_content {
-  font-family: "almoni", sans-serif;
+  font-family: "almoni",sans-serif;
   font-weight: 500;
   font-size: 1.25rem;
   padding: 1.25rem;
   display: none;
   color: #5A5A5A;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .sectionFooter {
   margin: 2.5rem 0;
 }
+
 .sectionFooter .sectionInner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .sectionFooter .sectionFooter_firstLine {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 1.875rem;
   width: 100%;
 }
+
 .sectionFooter .sectionFooter_firstLine .footerImg {
   margin-bottom: 2.5rem;
   width: 36.4375rem;
   height: 5.5rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
+
 .sectionFooter .sectionFooter_firstLine .footerText {
-  font-family: "almoni", sans-serif;
+  font-family: "almoni",sans-serif;
   font-weight: 500;
   font-size: 1rem;
   color: #5A5A5A;
 }
+
 .sectionFooter .sectionFooter_secondLine {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .sectionFooter .sectionFooter_secondLine .realmediaLogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .sectionFooter .sectionFooter_secondLine .realmediaLogo .logoImg {
   width: 5.625rem;
   height: 1.25rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
+
 .sectionFooter .sectionFooter_secondLine .realmediaLogo .logoText {
-  font-family: "almoni", sans-serif;
+  font-family: "almoni",sans-serif;
   font-weight: 300;
   font-size: 0.9375rem;
   color: #00549B;
 }
+
 .sectionFooter .sectionFooter_secondLine .realmediaLogo .logoText::after {
   content: "";
   border: none;
   border-left: 1px solid #00549B;
   margin: 0 0.625rem;
 }
+
 .sectionFooter .sectionFooter_secondLine .copyright {
-  font-family: "almoni", sans-serif;
+  font-family: "almoni",sans-serif;
   font-weight: 500;
   font-size: 1.125rem;
   color: #00549B;
@@ -1080,7 +1303,6 @@ input {
   .sectionInner {
     padding: 0 1.25rem;
   }
-
   .sectionVideo {
     height: 40.875rem;
     padding: 1.25rem 0;
@@ -1090,12 +1312,14 @@ input {
     height: 28.125rem;
   }
 }
+
 @media (max-width: 1000px) {
   .sectionVideo .sectionVideo_media iframe {
     width: 31.25rem;
     height: 21.875rem;
   }
 }
+
 @media (max-width: 900px) {
   .sectionSearchForm .calculator2019 .fields li label {
     padding: 0.625rem;
@@ -1103,17 +1327,14 @@ input {
   .sectionSearchForm .calculator2019 .fields li label::before {
     left: 1.0625rem;
   }
-
   .sectionSearchForm .calculator2019 .fields li label span.title,
-.sectionSearchForm .calculator2019 .fields li label select,
-.sectionSearchForm .calculator2019 .fields li label input {
+  .sectionSearchForm .calculator2019 .fields li label select,
+  .sectionSearchForm .calculator2019 .fields li label input {
     font-size: 0.9375rem;
   }
-
   .sectionSearchForm .calculator2019 .fields li .lastInput {
     width: 100%;
   }
-
   .sectionFirstTable .firstTable th {
     padding-left: 0.3125rem;
   }
@@ -1121,7 +1342,6 @@ input {
     padding: 0.3125rem;
     font-size: 1rem;
   }
-
   .sectionSecondTable .secondTable th {
     padding-left: 0.3125rem;
   }
@@ -1129,7 +1349,6 @@ input {
     padding: 0.3125rem;
     font-size: 1rem;
   }
-
   .sectionVideo .sectionVideo_list .textBetweenLists {
     font-size: 1rem;
   }
@@ -1141,6 +1360,7 @@ input {
     height: 17.1875rem;
   }
 }
+
 @media (max-width: 768px) {
   .sectionSearchForm .calculator2019 .fields li label {
     padding: 0.625rem;
@@ -1148,21 +1368,23 @@ input {
   .sectionSearchForm .calculator2019 .fields li label::before {
     left: 1.0625rem;
   }
-
   .sectionSearchForm .calculator2019 .fields li label span.title,
-.sectionSearchForm .calculator2019 .fields li label select,
-.sectionSearchForm .calculator2019 .fields li label input {
+  .sectionSearchForm .calculator2019 .fields li label select,
+  .sectionSearchForm .calculator2019 .fields li label input {
     font-size: 0.9375rem;
   }
-
   .sectionFooter .sectionFooter_firstLine .footerImg {
     width: 100%;
     height: auto;
   }
 }
+
 @media (max-width: 700px) {
   .sectionSearchForm .calculator2019 .fields li {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .sectionSearchForm .calculator2019 .fields li .lastInput {
     width: 100%;
@@ -1174,25 +1396,33 @@ input {
     width: 100%;
   }
   .sectionSearchForm .t-datepicker {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .sectionSearchForm .t-check-in,
-.sectionSearchForm .t-check-out {
+  .sectionSearchForm .t-check-out {
     margin-bottom: 0.625rem;
     width: 100%;
   }
-
   .sectionVideo {
     height: auto;
   }
   .sectionVideo .content {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .sectionVideo .content .sectionVideo_list {
-    order: 2;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .sectionVideo .sectionVideo_media iframe {
     margin-top: 20px;
     margin-bottom: 20px;
   }
 }
+/*# sourceMappingURL=style.css.map */
