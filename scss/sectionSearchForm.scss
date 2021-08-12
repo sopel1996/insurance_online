@@ -213,11 +213,14 @@
       .calculator2021 .dates {
           display: flex;
           flex-wrap: wrap;
+          justify-content: center;
       }
       
       .calculator2021 .dates label {
           width: toRem(200);
-          padding: toRem(5) 0 toRem(5) 0;
+          padding: 5px 0;
+          
+          
       }
       
       .calculator2021 .dates label span.title {
@@ -234,6 +237,15 @@
       .calculator2021 .dates label.checkbox {
           width: 100%;
           display: flex;
+          max-width: 650px;
+          padding: 7px 0;
+
+          &:nth-child(2){
+              padding-top: 15px;
+          }
+          &:nth-child(6){
+              padding-bottom: 15px;
+          }
       }
       
       .calculator2021 .dates label.etgari,
@@ -477,7 +489,7 @@
       }
       
       .t-check-in {
-          margin: 0 0 0 10px;
+          margin: 0 0 0 20px;
       }
       
       .t-input {
