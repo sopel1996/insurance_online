@@ -8,10 +8,12 @@
         margin-bottom: toRem(20);
         th, td {
             border: 1px solid #CCC;
+            max-width: toRem(127);
+            height: toRem(90);
         }
         th{
-            width: toRem(293);
-            height: toRem(90);
+            // width: toRem(293);
+            // height: toRem(90);
             color: #00549B;
             padding-right: toRem(20);
             padding-left: toRem(150);
@@ -19,8 +21,8 @@
         }
         td{
             @include AlmoniRegular(20);
-            max-width: toRem(127);
-            height: toRem(90);
+            // max-width: toRem(127);
+            // height: toRem(90);
             color: #5A5A5A;
             text-align: center;
             padding: 10px 15px;

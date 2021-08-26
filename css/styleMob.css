@@ -83,23 +83,22 @@
   .sectionFirstTable #relative {
     overflow-x: scroll;
   }
-  .sectionFirstTable #wrapper {
-    margin-right: 150px;
+  .sectionFirstTable .firstTable {
+    border-collapse: separate;
+    border-spacing: 0;
   }
   .sectionFirstTable .firstTable th {
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    right: 20px;
-    display: flex;
+    position: sticky;
+    right: 0px;
+    background: #fff;
+    border: 1px solid #ccc;
     align-items: center;
     justify-content: center;
     background-color: #fff;
     padding: 5px;
   }
   .sectionFirstTable .firstTable td {
-    min-width: 100px;
-    height: 150px;
+    min-width: 150px;
     padding: 5px;
   }
 
@@ -185,15 +184,15 @@
   .sectionSecondTable #relative {
     overflow-x: scroll;
   }
-  .sectionSecondTable #wrapper {
-    margin-right: 150px;
+  .sectionSecondTable .secondTable {
+    border-collapse: separate;
+    border-spacing: 0;
   }
   .sectionSecondTable .secondTable th {
-    width: 150px;
-    height: 200px;
-    position: absolute;
-    right: 20px;
-    display: flex;
+    position: sticky;
+    right: 0px;
+    background: #fff;
+    border: 1px solid #ccc;
     align-items: center;
     justify-content: center;
     background-color: #fff;
@@ -201,7 +200,6 @@
   }
   .sectionSecondTable .secondTable td {
     min-width: 150px;
-    height: 200px;
     padding: 5px;
   }
 
