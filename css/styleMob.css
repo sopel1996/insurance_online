@@ -81,11 +81,18 @@
   }
 
   .sectionFirstTable #relative {
-    overflow-x: scroll;
+    overflow: scroll;
+    height: 800px;
   }
   .sectionFirstTable .firstTable {
     border-collapse: separate;
     border-spacing: 0;
+  }
+  .sectionFirstTable .firstTable tr:first-child {
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
   }
   .sectionFirstTable .firstTable th {
     position: sticky;
@@ -182,11 +189,18 @@
   }
 
   .sectionSecondTable #relative {
-    overflow-x: scroll;
+    height: 800px;
+    overflow: scroll;
   }
   .sectionSecondTable .secondTable {
     border-collapse: separate;
     border-spacing: 0;
+  }
+  .sectionSecondTable .secondTable tr:first-child {
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
   }
   .sectionSecondTable .secondTable th {
     position: sticky;

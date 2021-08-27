@@ -114,13 +114,20 @@
     .sectionFirstTable{
         // overflow-x: hidden;
         #relative{
-            overflow-x: scroll;
+            overflow: scroll;
+            height: 800px;
         }
         #wrapper{
             // margin-right:toRem(150);    
         }
        
         .firstTable{
+            tr:first-child{
+                background: #fff;
+                position: sticky;
+                top: 0;
+                z-index: 100;
+            }
             border-collapse: separate;
             border-spacing: 0;
             th{
@@ -246,15 +253,20 @@
 
     .sectionSecondTable{
         #relative{
-    
-            overflow-x: scroll;
+            height: 800px;
+            overflow: scroll;
         }
         #wrapper{
             // margin-right:toRem(150);    
         }
         
         .secondTable{
-           
+            tr:first-child{
+                background: #fff;
+                position: sticky;
+                top: 0;
+                z-index: 100;
+            }
             border-collapse: separate;
             border-spacing: 0;
             th{
